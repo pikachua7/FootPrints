@@ -61,14 +61,15 @@ class Feed extends Component {
             const troveit = new web3.eth.Contract(TroveIt.abi, networkData.address);
             this.setState({ troveit });
 
-            const PostCount = await troveit.methods.totalSupply().call();
+            const PostCount = await troveit.methods.tokenCounter().call();
             console.log(PostCount)
             this.setState({ PostCount: PostCount })
-            for (var i = 0; i < this.state.PostCount; i++) {
+            for (var i = 0; i < this.state.PostCount; i=i+2) {
                 const tokenOwner = await troveit.methods.ownerOf(i).call()
                 console.log(tokenOwner)
                 const feedPost = await troveit.methods.tokenURI(i).call()
                 const slicedUrl = `https://ipfs.io/ipfs/${feedPost.slice(7, feedPost.length)}`
+                console.log(slicedUrl)
                 const response = await fetch(slicedUrl);
                 console.log(response)
                 const json = await response.json();
@@ -135,7 +136,7 @@ class Feed extends Component {
                                 >
                                     {console.log(this.state.cr_latitude, this.state.cr_longitude)}
                                     {this.state.feedPosts.map((feedPost) => {
-                                        if (this.state.cr_latitude === feedPost[0][4] && this.state.cr_longitude === feedPost[0][5]) {
+                                        if ((this.state.cr_latitude <= (feedPost[0][4])+1 && this.state.cr_latitude > (feedPost[0][4])-1) && this.state.cr_longitude <= (feedPost[0][5])+1 >  this.state.cr_longitude <= (feedPost[0][5])-1){
 
                                             return (
                                                 <div className="card mb-4">

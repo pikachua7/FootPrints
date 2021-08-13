@@ -11,6 +11,7 @@ import "./ERC721Token.sol";
 contract NFT is ERC721Token {
     
     uint256 public tokenCounter;
+    uint256 public photoCounter;
 
     /**
     * @dev Created a NFTRepository with a name and symbol
@@ -19,8 +20,11 @@ contract NFT is ERC721Token {
     */
     constructor(string memory _name, string memory _symbol) public ERC721Token(_name, _symbol) {
              tokenCounter = 0;
+             photoCounter=1;
     }
     
+    mapping (uint256 => string) public phash;
+
     /**
     * @dev Public function to register a new NFT
     * @dev Call the ERC721Token minter
@@ -30,8 +34,16 @@ contract NFT is ERC721Token {
         uint256 tokenId = tokenCounter;
         _mint(_address, tokenId);
         addNFTMetadata(tokenId, _uri);
-        tokenCounter = tokenCounter + 1;
+        tokenCounter = tokenCounter + 2;
         emit NFTRegistered(_address, tokenId, _uri);
+    }
+
+    function registerPhotoNFT(string memory _uri, string memory nfthash) public {
+        uint256 tokenId = photoCounter;
+        _mint(msg.sender, tokenId);
+        addNFTMetadata(tokenId, _uri);
+        phash[tokenId] = nfthash;
+        photoCounter = photoCounter + 2;
     }
 
     /**

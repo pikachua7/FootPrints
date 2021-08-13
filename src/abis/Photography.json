@@ -1,0 +1,2710 @@
+{
+  "contractName": "Photography",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "marketPlaceCounter",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "marketPlaceNFT",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "nftCounter",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "photoByAssetId",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "id",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address payable",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "nftAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "nftAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "assetId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "priceInWei",
+          "type": "uint256"
+        }
+      ],
+      "name": "setOnSale",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "nftAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "assetId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "priceInWei",
+          "type": "uint256"
+        }
+      ],
+      "name": "buyPhoto",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"nftAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"assetId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"priceInWei\",\"type\":\"uint256\"}],\"name\":\"buyPhoto\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"marketPlaceCounter\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"marketPlaceNFT\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"nftCounter\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"photoByAssetId\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"id\",\"type\":\"bytes32\"},{\"internalType\":\"address payable\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"nftAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"nftAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"assetId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"priceInWei\",\"type\":\"uint256\"}],\"name\":\"setOnSale\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/Photography.sol\":\"Photography\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/AddressUtils.sol\":{\"keccak256\":\"0xd5ebc2b4c16066152e923aae6740ba272d3a1069c00bab1cbdcd4435c8219717\",\"urls\":[\"bzz-raw://16e069f0272ec2e114fce37d3089010646a7e9e9058d7a1bdeaa8b7f9c5a8e3b\",\"dweb:/ipfs/QmUeHaNeWqMcrusqGqj8Ub6UVLGi1tBoFYbLokvEDiQQkw\"]},\"/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/ERC721.sol\":{\"keccak256\":\"0xcb8502c4433481316732e8c1046d6243b7f068b621f0c6ddcc4a01fbb523438a\",\"urls\":[\"bzz-raw://1f5101cf2e771a0ed1aee94865f30edbd55b76e50c02c9519b7f81199f8c8261\",\"dweb:/ipfs/QmWx8nGDZwyM9biqAE2pDPr5swx1kqFbUhCeZxWCQah3fM\"]},\"/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/ERC721Basic.sol\":{\"keccak256\":\"0x1067817f45307fb009d470c280dafc82c6fea3e8de196729beb9af0102917b60\",\"urls\":[\"bzz-raw://a0ec8b8e97120d2c8ea742e993fd776a47b8b43a8911c36b4af7e6d99a6447e0\",\"dweb:/ipfs/QmWvm4ryzSMP1YxCZnHUyViw491BWfkpkP3qGarq99wtuM\"]},\"/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/ERC721BasicToken.sol\":{\"keccak256\":\"0xa5a0e117264fdddc5006986d8eba63c395cc77316a5fd675e058bb7f783df893\",\"urls\":[\"bzz-raw://7f71a0105fd97cf3aa1f32f710a77f494ee538ec26ba7a495be850a32424fd47\",\"dweb:/ipfs/QmZNo4s7DA5dw8aTPgUWuYdKPyQMVoRPnHj1tR3WLjxCEE\"]},\"/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/ERC721Receiver.sol\":{\"keccak256\":\"0x1d3566daf0efe00c6332a0c04b580d82f37e96719367be0a71ff510389b2195e\",\"urls\":[\"bzz-raw://1beb596e7bdae35ac6559979b851b222af6c0c41b90b82345f1d706afcfb08aa\",\"dweb:/ipfs/QmZq8E6WgGdebF5VWrA5GdV7yMe9bCm4rYpZpYRtMZfbw6\"]},\"/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/ERC721Token.sol\":{\"keccak256\":\"0x0d8a3cbb87427fff587df0b64015bd47f5f77816fec83d642085798323fd4b04\",\"urls\":[\"bzz-raw://a981495eead948d2abe5e2e14f7799505430ba852e953312a650ee2c56e6e8f3\",\"dweb:/ipfs/QmetzjHGLrUn2vpnVx5fTri6wstzq8oKSdW2wZiA8XQicd\"]},\"/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/NFT.sol\":{\"keccak256\":\"0x95d8c989ea4ccdadce92af7957cfb5c1872d334ff9b5e10540f18da6cc90d584\",\"urls\":[\"bzz-raw://597cf8e1bd6722b06c43e42fa78bd29d551bb373d3d00ca3d0cc35a9c614e970\",\"dweb:/ipfs/QmdKdcX2gJ2PiiWpn3PuumU9Sx3TduzK82irr6Ahkg9jtB\"]},\"/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/Photography.sol\":{\"keccak256\":\"0x3fdc15f8d8730bccbbed89e6aab26a4bbc5310b07fdf03b26c5c72875f08845f\",\"urls\":[\"bzz-raw://6d5d542f630be9f962f26e382739b5640cf8bb3d0c94682bde9ff3a92deae413\",\"dweb:/ipfs/QmSCwXpgzdiPToamD7WmRtP7KiYusQHjvz5f67BbVjgzar\"]},\"/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/PhotographyStorage.sol\":{\"keccak256\":\"0x56b47100c7f3d1fb9a0a5c9340c8d7f49cc6138a300fd6c26eaa8838c826b8ba\",\"urls\":[\"bzz-raw://edbea3761e398e99620340949f81133139524ec05a597749588b0b2352e71a5e\",\"dweb:/ipfs/QmdgfGh3Zii4cSvNy4CNg2LWPknSA61CZHqWmvSduY6KPP\"]},\"/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/SafeMath.sol\":{\"keccak256\":\"0x779d7f2cd654958a2325f6d98eda84d16fc8495bd71271ea77cffeef1f30e496\",\"urls\":[\"bzz-raw://885f01c105096561b689e78f98b277c2d67621180fa5ad3bdff92a3c0dafd8b4\",\"dweb:/ipfs/QmcfsxVZ7v9RDxKSDKhbJ27EusqXYg94C6rnRvV94Uqqsq\"]}},\"version\":1}",
+  "bytecode": "0x6080604052600060025534801561001557600080fd5b5061061b806100256000396000f3fe6080604052600436106100555760003560e01c80633f8eb2621461005a578063b3905c0a146100b2578063ca98c13514610117578063e574609e146101f3578063e8b44fef1461021e578063f72cb6e114610249575b600080fd5b6100b06004803603606081101561007057600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291908035906020019092919080359060200190929190505050610298565b005b3480156100be57600080fd5b50610115600480360360608110156100d557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291908035906020019092919050505061029d565b005b34801561012357600080fd5b506101706004803603604081101561013a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610545565b604051808581526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200194505050505060405180910390f35b3480156101ff57600080fd5b506102086105c2565b6040518082815260200191505060405180910390f35b34801561022a57600080fd5b506102336105c8565b6040518082815260200191505060405180910390f35b34801561025557600080fd5b506102826004803603602081101561026c57600080fd5b81019080803590602001909291905050506105ce565b6040518082815260200191505060405180910390f35b505050565b60008373ffffffffffffffffffffffffffffffffffffffff16636352211e846040518263ffffffff1660e01b81526004018082815260200191505060206040518083038186803b1580156102f057600080fd5b505afa158015610304573d6000803e3d6000fd5b505050506040513d602081101561031a57600080fd5b8101908080519060200190929190505050905060004282858786604051602001808681526020018573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1660601b81526014018481526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1660601b815260140182815260200195505050505050604051602081830303815290604052805190602001209050836003600060025481526020019081526020016000208190555060016002540160028190555060405180608001604052808281526020018373ffffffffffffffffffffffffffffffffffffffff1681526020018673ffffffffffffffffffffffffffffffffffffffff16815260200184815250600160008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008681526020019081526020016000206000820151816000015560208201518160010160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060408201518160020160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550606082015181600301559050505050505050565b6001602052816000526040600020602052806000526040600020600091509150508060000154908060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060020160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060030154905084565b60005481565b60025481565b6003602052806000526040600020600091509050548156fea265627a7a72315820562c0e7fd27a2d3cf636a99a9e18589fcd75e9e95c7c935d4ee753cd01ff0b2064736f6c63430005110032",
+  "deployedBytecode": "0x6080604052600436106100555760003560e01c80633f8eb2621461005a578063b3905c0a146100b2578063ca98c13514610117578063e574609e146101f3578063e8b44fef1461021e578063f72cb6e114610249575b600080fd5b6100b06004803603606081101561007057600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291908035906020019092919080359060200190929190505050610298565b005b3480156100be57600080fd5b50610115600480360360608110156100d557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291908035906020019092919050505061029d565b005b34801561012357600080fd5b506101706004803603604081101561013a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610545565b604051808581526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200194505050505060405180910390f35b3480156101ff57600080fd5b506102086105c2565b6040518082815260200191505060405180910390f35b34801561022a57600080fd5b506102336105c8565b6040518082815260200191505060405180910390f35b34801561025557600080fd5b506102826004803603602081101561026c57600080fd5b81019080803590602001909291905050506105ce565b6040518082815260200191505060405180910390f35b505050565b60008373ffffffffffffffffffffffffffffffffffffffff16636352211e846040518263ffffffff1660e01b81526004018082815260200191505060206040518083038186803b1580156102f057600080fd5b505afa158015610304573d6000803e3d6000fd5b505050506040513d602081101561031a57600080fd5b8101908080519060200190929190505050905060004282858786604051602001808681526020018573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1660601b81526014018481526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1660601b815260140182815260200195505050505050604051602081830303815290604052805190602001209050836003600060025481526020019081526020016000208190555060016002540160028190555060405180608001604052808281526020018373ffffffffffffffffffffffffffffffffffffffff1681526020018673ffffffffffffffffffffffffffffffffffffffff16815260200184815250600160008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008681526020019081526020016000206000820151816000015560208201518160010160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060408201518160020160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550606082015181600301559050505050505050565b6001602052816000526040600020602052806000526040600020600091509150508060000154908060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060020160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060030154905084565b60005481565b60025481565b6003602052806000526040600020600091509050548156fea265627a7a72315820562c0e7fd27a2d3cf636a99a9e18589fcd75e9e95c7c935d4ee753cd01ff0b2064736f6c63430005110032",
+  "sourceMap": "172:1816:7:-;;;261:1;227:35;;172:1816;8:9:-1;5:2;;;30:1;27;20:12;5:2;172:1816:7;;;;;;;",
+  "deployedSourceMap": "172:1816:7:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1127:858;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1127:858:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;334:781;;8:9:-1;5:2;;;30:1;27;20:12;5:2;334:781:7;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;334:781:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;383:68:8;;8:9:-1;5:2;;;30:1;27;20:12;5:2;383:68:8;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;383:68:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;279:25;;8:9:-1;5:2;;;30:1;27;20:12;5:2;279:25:8;;;:::i;:::-;;;;;;;;;;;;;;;;;;;227:35:7;;8:9:-1;5:2;;;30:1;27;20:12;5:2;227:35:7;;;:::i;:::-;;;;;;;;;;;;;;;;;;;271:50;;8:9:-1;5:2;;;30:1;27;20:12;5:2;271:50:7;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;271:50:7;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;1127:858;;;;:::o;334:781::-;473:18;498:10;494:23;;;518:7;494:32;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;494:32:7;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;494:32:7;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;494:32:7;;;;;;;;;;;;;;;;473:53;;547:15;624;658:10;687:7;713:10;742;589:178;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;49:4:-1;39:7;30;26:21;22:32;13:7;6:49;589:178:7;;;565:213;;;;;;547:231;;826:7;791:14;:34;806:18;;791:34;;;;;;;;;;;:42;;;;882:1;863:18;;:20;844:18;:39;;;;934:163;;;;;;;;959:7;934:163;;;;1004:10;934:163;;;;;;1043:10;934:163;;;;;;1075:10;934:163;;;896:14;:26;911:10;896:26;;;;;;;;;;;;;;;:35;923:7;896:35;;;;;;;;;;;:201;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;334:781;;;;;:::o;383:68:8:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;279:25::-;;;;:::o;227:35:7:-;;;;:::o;271:50::-;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.16;\r\n\r\nimport \"./NFT.sol\";\r\nimport \"./ERC721Token.sol\";\r\nimport \"./SafeMath.sol\";\r\nimport \"./AddressUtils.sol\";\r\nimport \"./PhotographyStorage.sol\";\r\n\r\ncontract Photography is PhotographyStorage{\r\n    \r\n    uint256 public marketPlaceCounter=0;\r\n\r\n    mapping (uint256 => uint256) public marketPlaceNFT;\r\n    \r\n    function setOnSale(        \r\n        address nftAddress,\r\n        uint256 assetId,\r\n        uint256 priceInWei) public{\r\n        \r\n        address assetOwner = NFT(nftAddress).ownerOf(assetId);\r\n        \r\n        bytes32 photoId = keccak256(\r\n            abi.encodePacked(\r\n                block.timestamp,\r\n                assetOwner,\r\n                assetId,\r\n                nftAddress,\r\n                priceInWei\r\n            )\r\n        );\r\n\r\n        marketPlaceNFT[marketPlaceCounter]=assetId;\r\n        marketPlaceCounter=marketPlaceCounter+1;\r\n\r\n        photoByAssetId[nftAddress][assetId] = Photo({\r\n            id: photoId,\r\n            owner: address(uint160(assetOwner)),\r\n            nftAddress: nftAddress,\r\n            price: priceInWei\r\n        });\r\n        \r\n    }\r\n    \r\n    function buyPhoto(        \r\n        address nftAddress,\r\n        uint256 assetId,\r\n        uint256 priceInWei) public payable{\r\n        \r\n        // address sender = msg.sender; //buyer\r\n    \r\n        // Photo memory photo = photoByAssetId[nftAddress][assetId];\r\n    \r\n        // require(photo.id != 0, \"Asset not published\");\r\n        // require(priceInWei == msg.value, \"msg.value is not correct\");\r\n        // address payable seller = photo.owner;\r\n        \r\n        \r\n        // delete photoByAssetId[nftAddress][assetId];\r\n        \r\n        // // Transfer sale amount to seller\r\n        // seller.transfer(msg.value);\r\n        \r\n        // NFT(nftAddress).approve(sender, assetId);\r\n        //Transfer asset owner\r\n        // NFT(nftAddress).transferFrom(\r\n        //   seller,\r\n        //   sender,\r\n        //   assetId\r\n        // );\r\n        \r\n    }\r\n}",
+  "sourcePath": "C:/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/Photography.sol",
+  "ast": {
+    "absolutePath": "/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/Photography.sol",
+    "exportedSymbols": {
+      "Photography": [
+        1366
+      ]
+    },
+    "id": 1367,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1279,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:7"
+      },
+      {
+        "absolutePath": "/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/NFT.sol",
+        "file": "./NFT.sol",
+        "id": 1280,
+        "nodeType": "ImportDirective",
+        "scope": 1367,
+        "sourceUnit": 1278,
+        "src": "28:19:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/ERC721Token.sol",
+        "file": "./ERC721Token.sol",
+        "id": 1281,
+        "nodeType": "ImportDirective",
+        "scope": 1367,
+        "sourceUnit": 1150,
+        "src": "49:27:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/SafeMath.sol",
+        "file": "./SafeMath.sol",
+        "id": 1282,
+        "nodeType": "ImportDirective",
+        "scope": 1367,
+        "sourceUnit": 1481,
+        "src": "78:24:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/AddressUtils.sol",
+        "file": "./AddressUtils.sol",
+        "id": 1283,
+        "nodeType": "ImportDirective",
+        "scope": 1367,
+        "sourceUnit": 19,
+        "src": "104:28:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/PhotographyStorage.sol",
+        "file": "./PhotographyStorage.sol",
+        "id": 1284,
+        "nodeType": "ImportDirective",
+        "scope": 1367,
+        "sourceUnit": 1387,
+        "src": "134:34:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1285,
+              "name": "PhotographyStorage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1386,
+              "src": "196:18:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_PhotographyStorage_$1386",
+                "typeString": "contract PhotographyStorage"
+              }
+            },
+            "id": 1286,
+            "nodeType": "InheritanceSpecifier",
+            "src": "196:18:7"
+          }
+        ],
+        "contractDependencies": [
+          1386
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1366,
+        "linearizedBaseContracts": [
+          1366,
+          1386
+        ],
+        "name": "Photography",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1289,
+            "name": "marketPlaceCounter",
+            "nodeType": "VariableDeclaration",
+            "scope": 1366,
+            "src": "227:35:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1287,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "227:7:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 1288,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "261:1:7",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 1293,
+            "name": "marketPlaceNFT",
+            "nodeType": "VariableDeclaration",
+            "scope": 1366,
+            "src": "271:50:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
+              "typeString": "mapping(uint256 => uint256)"
+            },
+            "typeName": {
+              "id": 1292,
+              "keyType": {
+                "id": 1290,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "280:7:7",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "271:28:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
+                "typeString": "mapping(uint256 => uint256)"
+              },
+              "valueType": {
+                "id": 1291,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "291:7:7",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1354,
+              "nodeType": "Block",
+              "src": "452:663:7",
+              "statements": [
+                {
+                  "assignments": [
+                    1303
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 1303,
+                      "name": "assetOwner",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1354,
+                      "src": "473:18:7",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      },
+                      "typeName": {
+                        "id": 1302,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "473:7:7",
+                        "stateMutability": "nonpayable",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 1310,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 1308,
+                        "name": "assetId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1297,
+                        "src": "518:7:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 1305,
+                            "name": "nftAddress",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1295,
+                            "src": "498:10:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 1304,
+                          "name": "NFT",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1277,
+                          "src": "494:3:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_NFT_$1277_$",
+                            "typeString": "type(contract NFT)"
+                          }
+                        },
+                        "id": 1306,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "494:15:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_NFT_$1277",
+                          "typeString": "contract NFT"
+                        }
+                      },
+                      "id": 1307,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "ownerOf",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 287,
+                      "src": "494:23:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_address_$",
+                        "typeString": "function (uint256) view external returns (address)"
+                      }
+                    },
+                    "id": 1309,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "494:32:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "473:53:7"
+                },
+                {
+                  "assignments": [
+                    1312
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 1312,
+                      "name": "photoId",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1354,
+                      "src": "547:15:7",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      },
+                      "typeName": {
+                        "id": 1311,
+                        "name": "bytes32",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "547:7:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 1324,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 1316,
+                              "name": "block",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 1485,
+                              "src": "624:5:7",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_block",
+                                "typeString": "block"
+                              }
+                            },
+                            "id": 1317,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "timestamp",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "624:15:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 1318,
+                            "name": "assetOwner",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1303,
+                            "src": "658:10:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 1319,
+                            "name": "assetId",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1297,
+                            "src": "687:7:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 1320,
+                            "name": "nftAddress",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1295,
+                            "src": "713:10:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 1321,
+                            "name": "priceInWei",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1299,
+                            "src": "742:10:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            },
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            },
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 1314,
+                            "name": "abi",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1482,
+                            "src": "589:3:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_abi",
+                              "typeString": "abi"
+                            }
+                          },
+                          "id": 1315,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "memberName": "encodePacked",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "589:16:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                            "typeString": "function () pure returns (bytes memory)"
+                          }
+                        },
+                        "id": 1322,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "589:178:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      ],
+                      "id": 1313,
+                      "name": "keccak256",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1489,
+                      "src": "565:9:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                        "typeString": "function (bytes memory) pure returns (bytes32)"
+                      }
+                    },
+                    "id": 1323,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "565:213:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "547:231:7"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1329,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 1325,
+                        "name": "marketPlaceNFT",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1293,
+                        "src": "791:14:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
+                          "typeString": "mapping(uint256 => uint256)"
+                        }
+                      },
+                      "id": 1327,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 1326,
+                        "name": "marketPlaceCounter",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1289,
+                        "src": "806:18:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "791:34:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 1328,
+                      "name": "assetId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1297,
+                      "src": "826:7:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "791:42:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 1330,
+                  "nodeType": "ExpressionStatement",
+                  "src": "791:42:7"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1335,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 1331,
+                      "name": "marketPlaceCounter",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1289,
+                      "src": "844:18:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 1334,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "id": 1332,
+                        "name": "marketPlaceCounter",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1289,
+                        "src": "863:18:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "+",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "hexValue": "31",
+                        "id": 1333,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "882:1:7",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        },
+                        "value": "1"
+                      },
+                      "src": "863:20:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "844:39:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 1336,
+                  "nodeType": "ExpressionStatement",
+                  "src": "844:39:7"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1352,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 1337,
+                          "name": "photoByAssetId",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1385,
+                          "src": "896:14:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_uint256_$_t_struct$_Photo_$1377_storage_$_$",
+                            "typeString": "mapping(address => mapping(uint256 => struct PhotographyStorage.Photo storage ref))"
+                          }
+                        },
+                        "id": 1340,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 1338,
+                          "name": "nftAddress",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1295,
+                          "src": "911:10:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "896:26:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Photo_$1377_storage_$",
+                          "typeString": "mapping(uint256 => struct PhotographyStorage.Photo storage ref)"
+                        }
+                      },
+                      "id": 1341,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 1339,
+                        "name": "assetId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1297,
+                        "src": "923:7:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "896:35:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Photo_$1377_storage",
+                        "typeString": "struct PhotographyStorage.Photo storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 1343,
+                          "name": "photoId",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1312,
+                          "src": "959:7:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "arguments": [
+                                {
+                                  "argumentTypes": null,
+                                  "id": 1346,
+                                  "name": "assetOwner",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 1303,
+                                  "src": "1004:10:7",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                  }
+                                ],
+                                "id": 1345,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "nodeType": "ElementaryTypeNameExpression",
+                                "src": "996:7:7",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_type$_t_uint160_$",
+                                  "typeString": "type(uint160)"
+                                },
+                                "typeName": "uint160"
+                              },
+                              "id": 1347,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "typeConversion",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "996:19:7",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint160",
+                                "typeString": "uint160"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_uint160",
+                                "typeString": "uint160"
+                              }
+                            ],
+                            "id": 1344,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "988:7:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_address_$",
+                              "typeString": "type(address)"
+                            },
+                            "typeName": "address"
+                          },
+                          "id": 1348,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "988:28:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 1349,
+                          "name": "nftAddress",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1295,
+                          "src": "1043:10:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 1350,
+                          "name": "priceInWei",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1299,
+                          "src": "1075:10:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          },
+                          {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          },
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "id": 1342,
+                        "name": "Photo",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1377,
+                        "src": "934:5:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Photo_$1377_storage_ptr_$",
+                          "typeString": "type(struct PhotographyStorage.Photo storage pointer)"
+                        }
+                      },
+                      "id": 1351,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [
+                        "id",
+                        "owner",
+                        "nftAddress",
+                        "price"
+                      ],
+                      "nodeType": "FunctionCall",
+                      "src": "934:163:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Photo_$1377_memory",
+                        "typeString": "struct PhotographyStorage.Photo memory"
+                      }
+                    },
+                    "src": "896:201:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Photo_$1377_storage",
+                      "typeString": "struct PhotographyStorage.Photo storage ref"
+                    }
+                  },
+                  "id": 1353,
+                  "nodeType": "ExpressionStatement",
+                  "src": "896:201:7"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1355,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setOnSale",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1300,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1295,
+                  "name": "nftAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1355,
+                  "src": "371:18:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1294,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "371:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1297,
+                  "name": "assetId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1355,
+                  "src": "400:15:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1296,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "400:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1299,
+                  "name": "priceInWei",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1355,
+                  "src": "426:18:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1298,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "426:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "352:93:7"
+            },
+            "returnParameters": {
+              "id": 1301,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "452:0:7"
+            },
+            "scope": 1366,
+            "src": "334:781:7",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1364,
+              "nodeType": "Block",
+              "src": "1252:733:7",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 1365,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "buyPhoto",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1362,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1357,
+                  "name": "nftAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1365,
+                  "src": "1163:18:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1356,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1163:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1359,
+                  "name": "assetId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1365,
+                  "src": "1192:15:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1358,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1192:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1361,
+                  "name": "priceInWei",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1365,
+                  "src": "1218:18:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1360,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1218:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1144:93:7"
+            },
+            "returnParameters": {
+              "id": 1363,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1252:0:7"
+            },
+            "scope": 1366,
+            "src": "1127:858:7",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1367,
+        "src": "172:1816:7"
+      }
+    ],
+    "src": "0:1988:7"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/Photography.sol",
+      "exportedSymbols": {
+        "Photography": [
+          1366
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.5",
+            ".16"
+          ]
+        },
+        "id": 1279,
+        "name": "PragmaDirective",
+        "src": "0:24:7"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 1278,
+          "absolutePath": "/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/NFT.sol",
+          "file": "./NFT.sol",
+          "scope": 1367,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 1280,
+        "name": "ImportDirective",
+        "src": "28:19:7"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 1150,
+          "absolutePath": "/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/ERC721Token.sol",
+          "file": "./ERC721Token.sol",
+          "scope": 1367,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 1281,
+        "name": "ImportDirective",
+        "src": "49:27:7"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 1481,
+          "absolutePath": "/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/SafeMath.sol",
+          "file": "./SafeMath.sol",
+          "scope": 1367,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 1282,
+        "name": "ImportDirective",
+        "src": "78:24:7"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 19,
+          "absolutePath": "/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/AddressUtils.sol",
+          "file": "./AddressUtils.sol",
+          "scope": 1367,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 1283,
+        "name": "ImportDirective",
+        "src": "104:28:7"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 1387,
+          "absolutePath": "/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/PhotographyStorage.sol",
+          "file": "./PhotographyStorage.sol",
+          "scope": 1367,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 1284,
+        "name": "ImportDirective",
+        "src": "134:34:7"
+      },
+      {
+        "attributes": {
+          "contractDependencies": [
+            1386
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            1366,
+            1386
+          ],
+          "name": "Photography",
+          "scope": 1367
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "PhotographyStorage",
+                  "referencedDeclaration": 1386,
+                  "type": "contract PhotographyStorage"
+                },
+                "id": 1285,
+                "name": "UserDefinedTypeName",
+                "src": "196:18:7"
+              }
+            ],
+            "id": 1286,
+            "name": "InheritanceSpecifier",
+            "src": "196:18:7"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "marketPlaceCounter",
+              "scope": 1366,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 1287,
+                "name": "ElementaryTypeName",
+                "src": "227:7:7"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "30",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 0",
+                  "value": "0"
+                },
+                "id": 1288,
+                "name": "Literal",
+                "src": "261:1:7"
+              }
+            ],
+            "id": 1289,
+            "name": "VariableDeclaration",
+            "src": "227:35:7"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "marketPlaceNFT",
+              "scope": 1366,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(uint256 => uint256)",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(uint256 => uint256)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1290,
+                    "name": "ElementaryTypeName",
+                    "src": "280:7:7"
+                  },
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 1291,
+                    "name": "ElementaryTypeName",
+                    "src": "291:7:7"
+                  }
+                ],
+                "id": 1292,
+                "name": "Mapping",
+                "src": "271:28:7"
+              }
+            ],
+            "id": 1293,
+            "name": "VariableDeclaration",
+            "src": "271:50:7"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "setOnSale",
+              "scope": 1366,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "nftAddress",
+                      "scope": 1355,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 1294,
+                        "name": "ElementaryTypeName",
+                        "src": "371:7:7"
+                      }
+                    ],
+                    "id": 1295,
+                    "name": "VariableDeclaration",
+                    "src": "371:18:7"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "assetId",
+                      "scope": 1355,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1296,
+                        "name": "ElementaryTypeName",
+                        "src": "400:7:7"
+                      }
+                    ],
+                    "id": 1297,
+                    "name": "VariableDeclaration",
+                    "src": "400:15:7"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "priceInWei",
+                      "scope": 1355,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1298,
+                        "name": "ElementaryTypeName",
+                        "src": "426:7:7"
+                      }
+                    ],
+                    "id": 1299,
+                    "name": "VariableDeclaration",
+                    "src": "426:18:7"
+                  }
+                ],
+                "id": 1300,
+                "name": "ParameterList",
+                "src": "352:93:7"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1301,
+                "name": "ParameterList",
+                "src": "452:0:7"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "assignments": [
+                        1303
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "assetOwner",
+                          "scope": 1354,
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "type": "address",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "address",
+                              "stateMutability": "nonpayable",
+                              "type": "address"
+                            },
+                            "id": 1302,
+                            "name": "ElementaryTypeName",
+                            "src": "473:7:7"
+                          }
+                        ],
+                        "id": 1303,
+                        "name": "VariableDeclaration",
+                        "src": "473:18:7"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "address",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "ownerOf",
+                              "referencedDeclaration": 287,
+                              "type": "function (uint256) view external returns (address)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "type": "contract NFT",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_address",
+                                          "typeString": "address"
+                                        }
+                                      ],
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 1277,
+                                      "type": "type(contract NFT)",
+                                      "value": "NFT"
+                                    },
+                                    "id": 1304,
+                                    "name": "Identifier",
+                                    "src": "494:3:7"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 1295,
+                                      "type": "address",
+                                      "value": "nftAddress"
+                                    },
+                                    "id": 1305,
+                                    "name": "Identifier",
+                                    "src": "498:10:7"
+                                  }
+                                ],
+                                "id": 1306,
+                                "name": "FunctionCall",
+                                "src": "494:15:7"
+                              }
+                            ],
+                            "id": 1307,
+                            "name": "MemberAccess",
+                            "src": "494:23:7"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 1297,
+                              "type": "uint256",
+                              "value": "assetId"
+                            },
+                            "id": 1308,
+                            "name": "Identifier",
+                            "src": "518:7:7"
+                          }
+                        ],
+                        "id": 1309,
+                        "name": "FunctionCall",
+                        "src": "494:32:7"
+                      }
+                    ],
+                    "id": 1310,
+                    "name": "VariableDeclarationStatement",
+                    "src": "473:53:7"
+                  },
+                  {
+                    "attributes": {
+                      "assignments": [
+                        1312
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "photoId",
+                          "scope": 1354,
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "type": "bytes32",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "bytes32",
+                              "type": "bytes32"
+                            },
+                            "id": 1311,
+                            "name": "ElementaryTypeName",
+                            "src": "547:7:7"
+                          }
+                        ],
+                        "id": 1312,
+                        "name": "VariableDeclaration",
+                        "src": "547:15:7"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "bytes32",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bytes_memory_ptr",
+                                  "typeString": "bytes memory"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 1489,
+                              "type": "function (bytes memory) pure returns (bytes32)",
+                              "value": "keccak256"
+                            },
+                            "id": 1313,
+                            "name": "Identifier",
+                            "src": "565:9:7"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": false,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "bytes memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_address",
+                                      "typeString": "address"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_address",
+                                      "typeString": "address"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  ],
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "member_name": "encodePacked",
+                                  "referencedDeclaration": null,
+                                  "type": "function () pure returns (bytes memory)"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 1482,
+                                      "type": "abi",
+                                      "value": "abi"
+                                    },
+                                    "id": 1314,
+                                    "name": "Identifier",
+                                    "src": "589:3:7"
+                                  }
+                                ],
+                                "id": 1315,
+                                "name": "MemberAccess",
+                                "src": "589:16:7"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "timestamp",
+                                  "referencedDeclaration": null,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 1485,
+                                      "type": "block",
+                                      "value": "block"
+                                    },
+                                    "id": 1316,
+                                    "name": "Identifier",
+                                    "src": "624:5:7"
+                                  }
+                                ],
+                                "id": 1317,
+                                "name": "MemberAccess",
+                                "src": "624:15:7"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 1303,
+                                  "type": "address",
+                                  "value": "assetOwner"
+                                },
+                                "id": 1318,
+                                "name": "Identifier",
+                                "src": "658:10:7"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 1297,
+                                  "type": "uint256",
+                                  "value": "assetId"
+                                },
+                                "id": 1319,
+                                "name": "Identifier",
+                                "src": "687:7:7"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 1295,
+                                  "type": "address",
+                                  "value": "nftAddress"
+                                },
+                                "id": 1320,
+                                "name": "Identifier",
+                                "src": "713:10:7"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 1299,
+                                  "type": "uint256",
+                                  "value": "priceInWei"
+                                },
+                                "id": 1321,
+                                "name": "Identifier",
+                                "src": "742:10:7"
+                              }
+                            ],
+                            "id": 1322,
+                            "name": "FunctionCall",
+                            "src": "589:178:7"
+                          }
+                        ],
+                        "id": 1323,
+                        "name": "FunctionCall",
+                        "src": "565:213:7"
+                      }
+                    ],
+                    "id": 1324,
+                    "name": "VariableDeclarationStatement",
+                    "src": "547:231:7"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 1293,
+                                  "type": "mapping(uint256 => uint256)",
+                                  "value": "marketPlaceNFT"
+                                },
+                                "id": 1325,
+                                "name": "Identifier",
+                                "src": "791:14:7"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 1289,
+                                  "type": "uint256",
+                                  "value": "marketPlaceCounter"
+                                },
+                                "id": 1326,
+                                "name": "Identifier",
+                                "src": "806:18:7"
+                              }
+                            ],
+                            "id": 1327,
+                            "name": "IndexAccess",
+                            "src": "791:34:7"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 1297,
+                              "type": "uint256",
+                              "value": "assetId"
+                            },
+                            "id": 1328,
+                            "name": "Identifier",
+                            "src": "826:7:7"
+                          }
+                        ],
+                        "id": 1329,
+                        "name": "Assignment",
+                        "src": "791:42:7"
+                      }
+                    ],
+                    "id": 1330,
+                    "name": "ExpressionStatement",
+                    "src": "791:42:7"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 1289,
+                              "type": "uint256",
+                              "value": "marketPlaceCounter"
+                            },
+                            "id": 1331,
+                            "name": "Identifier",
+                            "src": "844:18:7"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "+",
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 1289,
+                                  "type": "uint256",
+                                  "value": "marketPlaceCounter"
+                                },
+                                "id": 1332,
+                                "name": "Identifier",
+                                "src": "863:18:7"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "31",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 1",
+                                  "value": "1"
+                                },
+                                "id": 1333,
+                                "name": "Literal",
+                                "src": "882:1:7"
+                              }
+                            ],
+                            "id": 1334,
+                            "name": "BinaryOperation",
+                            "src": "863:20:7"
+                          }
+                        ],
+                        "id": 1335,
+                        "name": "Assignment",
+                        "src": "844:39:7"
+                      }
+                    ],
+                    "id": 1336,
+                    "name": "ExpressionStatement",
+                    "src": "844:39:7"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct PhotographyStorage.Photo storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct PhotographyStorage.Photo storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "mapping(uint256 => struct PhotographyStorage.Photo storage ref)"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 1385,
+                                      "type": "mapping(address => mapping(uint256 => struct PhotographyStorage.Photo storage ref))",
+                                      "value": "photoByAssetId"
+                                    },
+                                    "id": 1337,
+                                    "name": "Identifier",
+                                    "src": "896:14:7"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 1295,
+                                      "type": "address",
+                                      "value": "nftAddress"
+                                    },
+                                    "id": 1338,
+                                    "name": "Identifier",
+                                    "src": "911:10:7"
+                                  }
+                                ],
+                                "id": 1340,
+                                "name": "IndexAccess",
+                                "src": "896:26:7"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 1297,
+                                  "type": "uint256",
+                                  "value": "assetId"
+                                },
+                                "id": 1339,
+                                "name": "Identifier",
+                                "src": "923:7:7"
+                              }
+                            ],
+                            "id": 1341,
+                            "name": "IndexAccess",
+                            "src": "896:35:7"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                "id",
+                                "owner",
+                                "nftAddress",
+                                "price"
+                              ],
+                              "type": "struct PhotographyStorage.Photo memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_bytes32",
+                                      "typeString": "bytes32"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_address_payable",
+                                      "typeString": "address payable"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_address",
+                                      "typeString": "address"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 1377,
+                                  "type": "type(struct PhotographyStorage.Photo storage pointer)",
+                                  "value": "Photo"
+                                },
+                                "id": 1342,
+                                "name": "Identifier",
+                                "src": "934:5:7"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 1312,
+                                  "type": "bytes32",
+                                  "value": "photoId"
+                                },
+                                "id": 1343,
+                                "name": "Identifier",
+                                "src": "959:7:7"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "type": "address payable",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_uint160",
+                                          "typeString": "uint160"
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "type": "type(address)",
+                                      "value": "address"
+                                    },
+                                    "id": 1344,
+                                    "name": "ElementaryTypeNameExpression",
+                                    "src": "988:7:7"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "isStructConstructorCall": false,
+                                      "lValueRequested": false,
+                                      "names": [
+                                        null
+                                      ],
+                                      "type": "uint160",
+                                      "type_conversion": true
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": [
+                                            {
+                                              "typeIdentifier": "t_address",
+                                              "typeString": "address"
+                                            }
+                                          ],
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": true,
+                                          "lValueRequested": false,
+                                          "type": "type(uint160)",
+                                          "value": "uint160"
+                                        },
+                                        "id": 1345,
+                                        "name": "ElementaryTypeNameExpression",
+                                        "src": "996:7:7"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 1303,
+                                          "type": "address",
+                                          "value": "assetOwner"
+                                        },
+                                        "id": 1346,
+                                        "name": "Identifier",
+                                        "src": "1004:10:7"
+                                      }
+                                    ],
+                                    "id": 1347,
+                                    "name": "FunctionCall",
+                                    "src": "996:19:7"
+                                  }
+                                ],
+                                "id": 1348,
+                                "name": "FunctionCall",
+                                "src": "988:28:7"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 1295,
+                                  "type": "address",
+                                  "value": "nftAddress"
+                                },
+                                "id": 1349,
+                                "name": "Identifier",
+                                "src": "1043:10:7"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 1299,
+                                  "type": "uint256",
+                                  "value": "priceInWei"
+                                },
+                                "id": 1350,
+                                "name": "Identifier",
+                                "src": "1075:10:7"
+                              }
+                            ],
+                            "id": 1351,
+                            "name": "FunctionCall",
+                            "src": "934:163:7"
+                          }
+                        ],
+                        "id": 1352,
+                        "name": "Assignment",
+                        "src": "896:201:7"
+                      }
+                    ],
+                    "id": 1353,
+                    "name": "ExpressionStatement",
+                    "src": "896:201:7"
+                  }
+                ],
+                "id": 1354,
+                "name": "Block",
+                "src": "452:663:7"
+              }
+            ],
+            "id": 1355,
+            "name": "FunctionDefinition",
+            "src": "334:781:7"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "buyPhoto",
+              "scope": 1366,
+              "stateMutability": "payable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "nftAddress",
+                      "scope": 1365,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 1356,
+                        "name": "ElementaryTypeName",
+                        "src": "1163:7:7"
+                      }
+                    ],
+                    "id": 1357,
+                    "name": "VariableDeclaration",
+                    "src": "1163:18:7"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "assetId",
+                      "scope": 1365,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1358,
+                        "name": "ElementaryTypeName",
+                        "src": "1192:7:7"
+                      }
+                    ],
+                    "id": 1359,
+                    "name": "VariableDeclaration",
+                    "src": "1192:15:7"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "priceInWei",
+                      "scope": 1365,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1360,
+                        "name": "ElementaryTypeName",
+                        "src": "1218:7:7"
+                      }
+                    ],
+                    "id": 1361,
+                    "name": "VariableDeclaration",
+                    "src": "1218:18:7"
+                  }
+                ],
+                "id": 1362,
+                "name": "ParameterList",
+                "src": "1144:93:7"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1363,
+                "name": "ParameterList",
+                "src": "1252:0:7"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1364,
+                "name": "Block",
+                "src": "1252:733:7"
+              }
+            ],
+            "id": 1365,
+            "name": "FunctionDefinition",
+            "src": "1127:858:7"
+          }
+        ],
+        "id": 1366,
+        "name": "ContractDefinition",
+        "src": "172:1816:7"
+      }
+    ],
+    "id": 1367,
+    "name": "SourceUnit",
+    "src": "0:1988:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.17+commit.d19bba13.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x3Ca1d7b9f77b4D33d9Ad16Bc526899aB5cd823c2",
+      "transactionHash": "0x092c8bf110e59116a7451e2d51eec66b5f6609b2790ee61658d32f8ed4cc942b"
+    }
+  },
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-08-13T16:46:26.750Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

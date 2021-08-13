@@ -2,12 +2,15 @@ import React, { Component } from "react";
 import Web3 from "web3";
 import TroveI from "../../abis/NFT.json";
 import TroveIt from "../../abis/Marketplace.json";
+import Photography from "../../abis/Photography.json";
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
+import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 import { red } from '@material-ui/core/colors';
 
 
@@ -45,7 +48,7 @@ const style = {
     }
 };
 
-class Premium extends Component {
+class MarketPlace extends Component {
     async componentWillMount() {
         await this.loadWeb3();
         await this.loadBlockchainData();
@@ -84,17 +87,25 @@ class Premium extends Component {
         const networkId = await web3.eth.net.getId();
         const networkData = TroveIt.networks[networkId];
         const net = TroveI.networks[networkId];
+        const networkDataP = Photography.networks[networkId];
 
-        if (networkData && net) {
+        if (networkData && net && networkDataP) {
+
+            this.setState({ contractAddress: net.address });
+            console.log(this.state.contractAddress,net.address)
+
             const troveit = new web3.eth.Contract(TroveIt.abi, networkData.address);
             this.setState({ troveit });
             const trovei = new web3.eth.Contract(TroveI.abi, net.address);
             this.setState({ trovei });
-            const PostCount = await troveit.methods.nftCounter().call();
+            const photography = new web3.eth.Contract(Photography.abi, networkDataP.address);
+            this.setState({photography});
+
+            const PostCount = await photography.methods.marketPlaceCounter().call();
             console.log(PostCount)
             this.setState({ PostCount: PostCount })
             for (var i = 0; i < PostCount; i++) {
-                const assetID = await troveit.methods.premiumNFT(i).call()
+                const assetID = await photography.methods.marketPlaceNFT(i).call()
                 console.log(assetID)
                 const tokenOwner = await trovei.methods.ownerOf(assetID).call()
                 console.log(tokenOwner)
@@ -131,18 +142,35 @@ class Premium extends Component {
 
     }
 
+    buyPhoto = (assetID, prize) =>{
+        this.setState({ loading: true })
+        console.log(assetID, prize,'buyPhoto',this.state.contractAddress)
+        let tipAmount = window.web3.utils.toWei('1', 'Ether')
+        this.state.photography.methods
+          .buyPhoto(this.state.contractAddress, assetID, tipAmount)
+          .send({ from: this.state.account ,value: 1000000000000000000})
+          .on("transactionHash", (hash) => {
+            console.log(hash)
+            this.setState({ loading: false });
+          });
+    }
+
     constructor(props) {
         super(props);
         this.state = {
             account: "",
             troveit: null,
             trovei: null,
+            photography:null,
             PostCount: 0,
+            contractAddress:null,
             feedPosts: [],
             loading: true,
             cr_latitude: '',
             cr_longitude: ''
         };
+
+        this.buyPhoto=this.buyPhoto.bind(this);
 
     }
 
@@ -169,7 +197,7 @@ class Premium extends Component {
                                 >
                                     {console.log(this.state.cr_latitude, this.state.cr_longitude)}
                                     {this.state.feedPosts.map((feedPost) => {
-                                        if (this.state.cr_latitude === feedPost[0][4] && this.state.cr_longitude === feedPost[0][5]) {
+                                       if ((this.state.cr_latitude <= (feedPost[0][4])+2 && this.state.cr_latitude > (feedPost[0][4])-2) && this.state.cr_longitude <= (feedPost[0][5])+2 >  this.state.cr_longitude <= (feedPost[0][5])-2){
 
                                             return (
                                                 <Card className={style.root} style={{ paddingBottom: '2%' }}>
@@ -196,6 +224,13 @@ class Premium extends Component {
                                                                 <Typography variant="body2" color="textSecondary" component="p">
                                                                     {this.state.feedPosts[0][0][2]}
                                                                 </Typography>
+                                                                <IconButton aria-label={`info about ${feedPost[0][4]}`} className={style.icon}
+                                                                onClick={(event) => {
+                                                                    this.buyPhoto(feedPost[0][0], 1000);
+                                                                }}
+                                                                >
+                                                                <MonetizationOnIcon style={{ color: "black" }} />
+                                                            </IconButton>
                                                             </CardContent>
                                                         </div>
                                                     </div>
@@ -215,4 +250,4 @@ class Premium extends Component {
     }
 }
 
-export default Premium;
+export default MarketPlace;

@@ -10,6 +10,12 @@ import IconButton from "@material-ui/core/IconButton";
 import CloudUploadIcon from "@material-ui/icons/CloudUpload";
 import { NFTStorage, File } from 'nft.storage';
 import { TextField, Paper } from "@material-ui/core";
+import Radio from '@material-ui/core/Radio';
+import RadioGroup from '@material-ui/core/RadioGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import FormControl from '@material-ui/core/FormControl';
+import FormLabel from '@material-ui/core/FormLabel';
+import JIMP from "jimp";
 
 const apiKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDU2NGI0NjlFYTVlZTIxODNiNDQxNTUwMWRCQWYxNzBiQjdDYTkxOGMiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTYyNjg1Njg2OTkzMiwibmFtZSI6IkZvb3RwcmludCJ9.QMxvqcHpZJghwlDwMtM4Sfi4_rrAEhljRNrkTDuo1kg'
 const client = new NFTStorage({ token: apiKey })
@@ -109,32 +115,65 @@ class Upload extends Component {
       this.setState({ contractAddress: networkData.address });
       console.log(this.state.contractAddress)
 
-      const PostCount = await marketplace.methods.nftCounter().call();
+      // const PostCount = await marketplace.methods.nftCounter().call();
+      // console.log(PostCount)
+      // this.setState({ PostCount: PostCount })
+      // for (var i = 1; i <= PostCount; i++) {
+      //   const assetID = await marketplace.methods.premiumNFT(i).call()
+      //   console.log(assetID)
+      //   const tokenOwnerAddress = await troveit.methods.ownerOf(assetID).call()
+      //   console.log(tokenOwnerAddress)
+      //   const feedPost = await troveit.methods.tokenURI(assetID).call()
+      //   console.log(feedPost)
+      //   const slicedUrl = `https://ipfs.io/ipfs/${feedPost.slice(7, feedPost.length)}`
+      //   console.log(slicedUrl)
+      //   const response = await fetch(slicedUrl);
+      //   console.log(response)
+      //   const json = await response.json();
+      //   const latitude = json.properties.latitude
+      //   const longitude = json.properties.longitude
+      //   if (latitude === this.state.latitude && longitude === this.state.longitude) {
+      //     this.setState({ premiumAssetID: assetID })
+      //     this.setState({ premiumLocation: true })
+      //     if (tokenOwnerAddress == accounts[0]) {
+      //       this.setState({ tokenOwner: true })
+      //     }
+      //   }
+
+      // }
+
+      const PostCount = await troveit.methods.photoCounter().call();
       console.log(PostCount)
       this.setState({ PostCount: PostCount })
-      for (var i = 1; i <= PostCount; i++) {
-        const assetID = await marketplace.methods.premiumNFT(i).call()
-        console.log(assetID)
-        const tokenOwnerAddress = await troveit.methods.ownerOf(assetID).call()
-        console.log(tokenOwnerAddress)
-        const feedPost = await troveit.methods.tokenURI(assetID).call()
-        console.log(feedPost)
-        const slicedUrl = `https://ipfs.io/ipfs/${feedPost.slice(7, feedPost.length)}`
-        console.log(slicedUrl)
-        const response = await fetch(slicedUrl);
-        console.log(response)
-        const json = await response.json();
-        const latitude = json.properties.latitude
-        const longitude = json.properties.longitude
-        if (latitude === this.state.latitude && longitude === this.state.longitude) {
-          this.setState({ premiumAssetID: assetID })
-          this.setState({ premiumLocation: true })
-          if (tokenOwnerAddress == accounts[0]) {
-            this.setState({ tokenOwner: true })
-          }
-        }
+      for (var i = 1; i < this.state.PostCount; i=i+2) {
+          const tokenOwner = await troveit.methods.ownerOf(i).call()
+          console.log(tokenOwner)
+          const feedPost = await troveit.methods.tokenURI(i).call()
+          const slicedUrl = `https://ipfs.io/ipfs/${feedPost.slice(7, feedPost.length)}`
+          console.log(slicedUrl)
+          const response = await fetch(slicedUrl);
+          console.log(response)
+          const json = await response.json();
+          const latitude = json.properties.latitude
+          const longitude = json.properties.longitude
 
+          const imageUrl = json.image.slice(7, json.image.length - 10)
+          console.log(imageUrl)
+
+          const finalUrl = `https://${imageUrl}.ipfs.dweb.link/trial.jpg`
+          console.log(finalUrl)
+
+          const phash = await troveit.methods.phash(i).call()
+
+          const Post = [i, json.name, json.description, finalUrl, latitude, longitude, tokenOwner,phash]
+          console.log(Post, this.state.feedPosts)
+
+          this.setState({
+              feedPosts: [...this.state.feedPosts, [Post]],
+          });
+          console.log(Post, this.state.feedPosts)
       }
+
       console.log(this.state.premiumLocation, this.state.premiumAssetID)
 
       this.setState({ loading: false });
@@ -179,29 +218,106 @@ class Upload extends Component {
     }
     const metadata = getMetadata();
     console.log(metadata)
-    metadata.then((value) => {
+    metadata.then(async (value) => {
       this.setState({ flag: true });
       console.log(value);
-      console.log(this.state.premiumLocation)
-      if (this.state.premiumLocation && this.state.tokenOwner === false) {
-        this.state.marketplace.methods
-          .addPremiumNFT(this.state.contractAddress, this.state.premiumAssetID, value)
-          .send({ from: this.state.account, value: 1000000000000000000 })
-          .on("transactionHash", (hash) => {
-            this.setState({ loading: false });
+      console.log(this.state.type)
+      if(this.state.type === 'photography'){
 
-          });
-      }
-      else {
-        this.state.troveit.methods
-          .registerNFT(value, this.state.account)
-          .send({ from: this.state.account })
-          .on("transactionHash", (hash) => {
-            this.setState({ loading: false });
+        async function getHash(img1) {
+          const loadImage1 = await JIMP.read(img1);
+          const hash1 = loadImage1.hash();
+          return hash1;
+        }
 
+        // computing image url
+        const slicedUrl = `https://ipfs.io/ipfs/${value.slice(7, value.length)}`
+        console.log(slicedUrl)
+        const response = await fetch(slicedUrl);
+        console.log(response)
+        const json = await response.json();
+
+        const imageUrl = json.image.slice(7, json.image.length - 10)
+        console.log(imageUrl)
+        const finalUrl = `https://${imageUrl}.ipfs.dweb.link/trial.jpg`
+        console.log(finalUrl)
+
+        const babe = getHash(finalUrl);
+        console.log(babe);
+
+        this.state.feedPosts.forEach((originalPost) => {
+          babe.then((value2) => {
+            console.log("Feed : ", JIMP.compareHashes(value2, originalPost[0][7]));
+            if (
+              JIMP.compareHashes(value2, originalPost[0][7]) <= 0.50
+            ) {
+              //add condition here
+              this.setState({ flag: false });
+              console.log("FEED POST");
+            }
+            console.log(value2);
           });
-        console.log(value);
+          console.log('Kyu nhi aara tum')
+        });
+
+        //Original Post
+        babe.then((value2) => {
+          if (this.state.flag) {
+            console.log("Ori : ", value2);
+            this.setState({ loading: true });
+            console.log(value2);
+            console.log("ORIGINAL");
+            this.state.troveit.methods
+              .registerPhotoNFT(value,value2)
+              .send({ from: this.state.account })
+              .on("transactionHash", (hash) => {
+              this.setState({ loading: false });
+          });
+          }
+        });
       }
+      else if(this.state.type === 'memorials'){
+        console.log(this.state.premiumLocation)
+        if (this.state.premiumLocation && this.state.tokenOwner === false) {
+          this.state.marketplace.methods
+            .addPremiumNFT(this.state.contractAddress, this.state.premiumAssetID, value)
+            .send({ from: this.state.account, value: 1000000000000000000 })
+            .on("transactionHash", (hash) => {
+              this.setState({ loading: false });
+
+            });
+        }
+        else {
+          console.log(this.state.account,value)
+          this.state.troveit.methods
+            .registerNFT(value, this.state.account)
+            .send({ from: this.state.account })
+            .on("transactionHash", (hash) => {
+              this.setState({ loading: false });
+
+            });
+          console.log(value);
+        }
+      }
+      // if (this.state.premiumLocation && this.state.tokenOwner === false) {
+      //   this.state.marketplace.methods
+      //     .addPremiumNFT(this.state.contractAddress, this.state.premiumAssetID, value)
+      //     .send({ from: this.state.account, value: 1000000000000000000 })
+      //     .on("transactionHash", (hash) => {
+      //       this.setState({ loading: false });
+
+      //     });
+      // }
+      // else {
+      //   this.state.troveit.methods
+      //     .registerNFT(value, this.state.account)
+      //     .send({ from: this.state.account })
+      //     .on("transactionHash", (hash) => {
+      //       this.setState({ loading: false });
+
+      //     });
+      //   console.log(value);
+      // }
     });
 
     this.setState({ loading: false })
@@ -215,6 +331,10 @@ class Upload extends Component {
     this.setState({ description: event.target.value });
   }
 
+  setType = (event) => {
+    this.setState({ type: event.target.value });
+  }
+
   constructor(props) {
     super(props);
     this.state = {
@@ -224,8 +344,11 @@ class Upload extends Component {
       contractAddress: null,
       loading: true,
       buffer: '',
+      flag:true,
+      feedPosts:[],
       name: '',
       description: '',
+      type:'',
       latitude: '',
       longitude: '',
       premiumLocation: false,
@@ -237,6 +360,7 @@ class Upload extends Component {
     this.captureFile = this.captureFile.bind(this);
     this.setName = this.setName.bind(this);
     this.setDescription = this.setDescription.bind(this);
+    this.setType = this.setType.bind(this);
   }
 
   render() {
@@ -295,6 +419,15 @@ class Upload extends Component {
                 value={this.state.value}
                 onChange={this.setDescription}
               />
+
+              <FormControl component="fieldset">
+                <FormLabel component="legend">Select Category</FormLabel>
+                <RadioGroup aria-label="gender" name="gender1" onChange={this.setType}>
+                  <FormControlLabel value="memorials" control={<Radio />} label="Memorials" />
+                  <FormControlLabel value="photography" control={<Radio />} label="Photography" />
+                </RadioGroup>
+              </FormControl>
+
               <div className={classes.fileInput}>
               </div>
               <Button

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Web3 from "web3";
 import TroveIt from "../../abis/NFT.json";
 import MarketPlace from "../../abis/Marketplace.json";
+import Photography from "../../abis/Photography.json";
 import ImageList from '@material-ui/core/ImageList';
 import ImageListItem from '@material-ui/core/ImageListItem';
 import ImageListItemBar from '@material-ui/core/ImageListItemBar';
@@ -9,7 +10,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import BeachAccessIcon from '@material-ui/icons/BeachAccess';
-
+import EuroIcon from '@material-ui/icons/Euro';
 
 
 const style = {
@@ -72,6 +73,7 @@ class Profile extends Component {
     const networkId = await web3.eth.net.getId();
     const networkData = TroveIt.networks[networkId];
     const networkDataM = MarketPlace.networks[networkId];
+    const networkDataP = Photography.networks[networkId];
 
     navigator.geolocation.getCurrentPosition(
       position => this.setState({
@@ -81,11 +83,13 @@ class Profile extends Component {
       err => console.log(err)
     );
 
-    if (networkData && networkDataM) {
+    if (networkData && networkDataM && networkDataP) {
       const troveit = new web3.eth.Contract(TroveIt.abi, networkData.address);
       const marketplace = new web3.eth.Contract(MarketPlace.abi, networkDataM.address);
+      const photography = new web3.eth.Contract(Photography.abi, networkDataP.address);
       this.setState({ troveit });
       this.setState({ marketplace });
+      this.setState({ photography });
 
       this.setState({ contractAddress: networkData.address });
       console.log(this.state.contractAddress)
@@ -93,7 +97,7 @@ class Profile extends Component {
       let PostCount = await marketplace.methods.nftCounter().call();
       console.log(PostCount)
       this.setState({ PostCount: PostCount })
-      for (var i = 1; i <= PostCount; i++) {
+      for (var i = 0; i < PostCount; i++) {
         console.log(i)
         //feedPost : assetID
         const assetID = await marketplace.methods.premiumNFT(i).call()
@@ -114,32 +118,65 @@ class Profile extends Component {
       }
       console.log(this.state.premiumLocation)
 
-      PostCount = await troveit.methods.balanceOf(accounts[0]).call();
+      PostCount = await troveit.methods.tokenCounter().call();
       console.log(PostCount)
       this.setState({ PostCount: PostCount })
-      for (var i = 0; i < this.state.PostCount; i++) {
-        const tokenId = await troveit.methods.tokenOfOwnerByIndex(accounts[0], i).call()
-        console.log(tokenId)
-        const feedPost = await troveit.methods.tokenURI(tokenId).call()
-        console.log(feedPost)
-        const slicedUrl = `https://ipfs.io/ipfs/${feedPost.slice(7, feedPost.length)}`
-        const response = await fetch(slicedUrl);
-        // console.log(response)
-        const json = await response.json();
-        const latitude = json.properties.latitude
-        const longitude = json.properties.longitude
-        const imageUrl = json.image.slice(7, json.image.length - 10)
-        // console.log(imageUrl)
-        const finalUrl = `https://${imageUrl}.ipfs.dweb.link/trial.jpg`
-        // console.log(finalUrl)
+      for (var i = 0; i < 2*this.state.PostCount-2; i=i+2) {
+        const tokenId = i
+        const tokenOwner = await troveit.methods.ownerOf(i).call()
+        if(tokenOwner === accounts[0]){
+          console.log(tokenId)
+          const feedPost = await troveit.methods.tokenURI(tokenId).call()
+          console.log(feedPost)
+          const slicedUrl = `https://ipfs.io/ipfs/${feedPost.slice(7, feedPost.length)}`
+          const response = await fetch(slicedUrl);
+          // console.log(response)
+          const json = await response.json();
+          const latitude = json.properties.latitude
+          const longitude = json.properties.longitude
+          const imageUrl = json.image.slice(7, json.image.length - 10)
+          // console.log(imageUrl)
+          const finalUrl = `https://${imageUrl}.ipfs.dweb.link/trial.jpg`
+          // console.log(finalUrl)
 
-        const Post = [i, json.name, json.description, finalUrl, latitude, longitude]
-        // console.log(Post,this.state.feedPosts)
+          const Post = [i, json.name, json.description, finalUrl, latitude, longitude,0]
+          // console.log(Post,this.state.feedPosts)
 
-        this.setState({
-          feedPosts: [...this.state.feedPosts, [Post]],
-        });
-        console.log(Post, this.state.feedPosts)
+          this.setState({
+            feedPosts: [...this.state.feedPosts, [Post]],
+          });
+          console.log(Post, this.state.feedPosts)
+        }
+      }
+
+      PostCount = await troveit.methods.photoCounter().call();
+      console.log(PostCount)
+      this.setState({ PostCount: PostCount })
+      for (var i = 1; i < this.state.PostCount; i=i+2) {
+        const tokenId = i
+        const tokenOwner = await troveit.methods.ownerOf(i).call()
+        if(tokenOwner === accounts[0]){
+          const feedPost = await troveit.methods.tokenURI(tokenId).call()
+          console.log(feedPost)
+          const slicedUrl = `https://ipfs.io/ipfs/${feedPost.slice(7, feedPost.length)}`
+          const response = await fetch(slicedUrl);
+          // console.log(response)
+          const json = await response.json();
+          const latitude = json.properties.latitude
+          const longitude = json.properties.longitude
+          const imageUrl = json.image.slice(7, json.image.length - 10)
+          // console.log(imageUrl)
+          const finalUrl = `https://${imageUrl}.ipfs.dweb.link/trial.jpg`
+          // console.log(finalUrl)
+
+          const Post = [i, json.name, json.description, finalUrl, latitude, longitude,1]
+          // console.log(Post,this.state.feedPosts)
+
+          this.setState({
+            feedPosts: [...this.state.feedPosts, [Post]],
+          });
+          console.log(Post, this.state.feedPosts)
+        }
       }
 
       this.setState({ loading: false });
@@ -153,7 +190,7 @@ class Profile extends Component {
 
   makePremium = (assetID, prize) => {
     this.setState({ loading: true })
-    console.log(assetID, prize)
+    console.log(assetID, prize,'makePremium')
     let tipAmount = window.web3.utils.toWei('1', 'Ether')
     this.state.marketplace.methods
       .convertToPremium(this.state.contractAddress, assetID, tipAmount)
@@ -164,12 +201,26 @@ class Profile extends Component {
       });
   };
 
+  setOnSale = (assetID, prize) =>{
+    this.setState({ loading: true })
+    console.log(assetID, prize,'setOnSale')
+    let tipAmount = window.web3.utils.toWei('1', 'Ether')
+    this.state.photography.methods
+      .setOnSale(this.state.contractAddress, assetID, tipAmount)
+      .send({ from: this.state.account })
+      .on("transactionHash", (hash) => {
+        console.log(hash)
+        this.setState({ loading: false });
+      });
+  }
+
   constructor(props) {
     super(props);
     this.state = {
       account: "",
       troveIt: null,
       marketplace: null,
+      photography:null,
       PostCount: 0,
       feedPosts: [],
       contractAddress: null,
@@ -180,6 +231,7 @@ class Profile extends Component {
       premiumAssetID: null
     };
     this.makePremium = this.makePremium.bind(this);
+    this.setOnSale = this.setOnSale.bind(this);
   }
 
   render() {
@@ -220,6 +272,15 @@ class Profile extends Component {
                           {feedPost[0][4]},{feedPost[0][5]}
                         </span>}
                         actionIcon={
+                          feedPost[0][6] === 1?(
+                          <IconButton aria-label={`info about ${feedPost[0][4]}`} className={style.icon}
+                            
+                            onClick={(event) => {
+                              this.setOnSale(feedPost[0][0], 1000);
+                            }}
+                          >
+                            <EuroIcon style={{ color: "white" }} />
+                          </IconButton>):
                           this.state.premiumLocation ? (<div></div>) :
                             <IconButton aria-label={`info about ${feedPost[0][4]}`} className={style.icon}
                               onClick={(event) => {

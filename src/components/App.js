@@ -7,7 +7,8 @@ import Upload from './Upload/Upload';
 import Feed from './Feed/Feed';
 import Premium from './Premium/Premium';
 import Profile from './Profile/Profile';
-
+import Photography from './PhotographyNFT/Photography';
+import MarketPlace from './MarketPlace/MarketPlace';
 
 class App extends Component {
   async componentWillMount() {
@@ -69,6 +70,8 @@ class App extends Component {
           <Route path="/feed" exact component={() => <Feed />} />
           <Route path="/premium" exact component={() => <Premium />} />
           <Route path="/profile" exact component={() => <Profile />} />
+          <Route path="/photo" exact component={() => <Photography />} />
+          <Route path="/marketplace" exact component={() => <MarketPlace />} />
         </Switch>
       </Router>
       // </div>
