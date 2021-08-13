@@ -35,7 +35,7 @@ function Navigation(props) {
                   size="small"
                 >
                   <Link class="nav-link" to="/" style={{ color: "#fd535b" }}>
-                    Home
+                    Upload 
                     <span class="sr-only">(current)</span>
                   </Link>
                 </Button>
@@ -48,7 +48,7 @@ function Navigation(props) {
                 // variant="contained"
                 size="small">
                   <Link class="nav-link" to="/feed" style={{ color: "#fd535b" }} >
-                    Feeds
+                    Memorials
                   </Link>
                 </Button>
               </li>
@@ -67,22 +67,42 @@ function Navigation(props) {
               </li>
 
               <li
+                class={`nav-item  ${props.location.pathname === "/photo" ? "active" : ""
+                  }`}
+              > <Button
+                color="white"
+                // variant="contained"
+                size="small">
+                  <Link class="nav-link" to="/photo" style={{ color: "#fd535b" }} >
+                    Photography
+                  </Link>
+                </Button>
+              </li>
+
+              <li
+                class={`nav-item  ${props.location.pathname === "/marketplace" ? "active" : ""
+                  }`}
+              > <Button
+                color="white"
+                size="small">
+                  <Link class="nav-link" to="/marketplace" style={{ color: "#fd535b" }} >
+                    Marketplace
+                  </Link>
+                </Button>
+              </li>
+
+              <li
                 class={`nav-item  ${props.location.pathname === "/profile" ? "active" : ""
                   }`}
               >
                 <Button
                   color="white"
-                  // variant="contained"
                   size="small"
-                // fullWidth
                 >
                   <Link class="nav-link" to="/profile" style={{ color: "#fd535b" }} >
                     My Profile
                   </Link>
                 </Button>
-
-
-
               </li>
             </ul>
           </div>

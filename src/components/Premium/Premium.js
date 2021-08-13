@@ -2,27 +2,14 @@ import React, { Component } from "react";
 import Web3 from "web3";
 import TroveI from "../../abis/NFT.json";
 import TroveIt from "../../abis/Marketplace.json";
-import Portis from '@portis/web3';
-import IconButton from '@material-ui/core/IconButton';
-import BeachAccessIcon from '@material-ui/icons/BeachAccess';
-import BeenhereIcon from '@material-ui/icons/Beenhere';
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-
-import { makeStyles } from '@material-ui/core/styles';
-import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
-import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import ShareIcon from '@material-ui/icons/Share';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
+
 
 const style = {
     content: {
@@ -80,13 +67,7 @@ class Premium extends Component {
 
     async loadBlockchainData() {
 
-        // const web3 = window.web3;
-        const myLocalPOANode = {
-            nodeUrl: "https://matic-mumbai.chainstacklabs.com",
-            chainId: 80001,
-        };
-        const portis = new Portis('c0f465f7-8289-42c1-98a6-cec427ceecc6', myLocalPOANode);
-        const web3 = new Web3(portis.provider);
+        const web3 = window.web3;
 
         // Initialize your dapp here like getting user accounts etc
         // Load account

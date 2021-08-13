@@ -2,21 +2,15 @@ import React, { Component } from "react";
 import Web3 from "web3";
 import TroveIt from "../../abis/NFT.json";
 import MarketPlace from "../../abis/Marketplace.json";
-
 import ImageList from '@material-ui/core/ImageList';
 import ImageListItem from '@material-ui/core/ImageListItem';
 import ImageListItemBar from '@material-ui/core/ImageListItemBar';
-import ListSubheader from '@material-ui/core/ListSubheader';
 import IconButton from '@material-ui/core/IconButton';
-import InfoIcon from '@material-ui/icons/Info';
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import BeachAccessIcon from '@material-ui/icons/BeachAccess';
 
 
-import { NFTStorage, File, Blob } from 'nft.storage';
-import Portis from '@portis/web3';
-import { Style } from "@material-ui/icons";
 
 const style = {
   content: {
@@ -67,15 +61,8 @@ class Profile extends Component {
   }
 
   async loadBlockchainData() {
-
-    const myLocalPOANode = {
-      nodeUrl: "https://matic-mumbai.chainstacklabs.com",
-      chainId: 80001,
-    };
-    const portis = new Portis('c0f465f7-8289-42c1-98a6-cec427ceecc6', myLocalPOANode);
-    const web3 = new Web3(portis.provider);
-
-    // const web3 = window.web3;
+    
+    const web3 = window.web3;
 
     // Initialize your dapp here like getting user accounts etc
     // Load account
