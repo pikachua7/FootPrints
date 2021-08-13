@@ -16,6 +16,8 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import JIMP from "jimp";
+import { TextField, Paper, Typography } from "@material-ui/core";
+//import bg from './trial.jpg';
 
 const apiKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDU2NGI0NjlFYTVlZTIxODNiNDQxNTUwMWRCQWYxNzBiQjdDYTkxOGMiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTYyNjg1Njg2OTkzMiwibmFtZSI6IkZvb3RwcmludCJ9.QMxvqcHpZJghwlDwMtM4Sfi4_rrAEhljRNrkTDuo1kg'
 const client = new NFTStorage({ token: apiKey })
@@ -89,6 +91,16 @@ class Upload extends Component {
 
     const web3 = window.web3;
 
+    // const portis = new Portis('c0f465f7-8289-42c1-98a6-cec427ceecc6', 'maticMumbai');
+    // const web3 = new Web3(portis.provider);
+    /*
+    const myLocalPOANode = {
+      nodeUrl: "https://matic-mumbai.chainstacklabs.com",
+      chainId: 80001,
+    };
+    const portis = new Portis('c0f465f7-8289-42c1-98a6-cec427ceecc6', myLocalPOANode);
+    const web3 = new Web3(portis.provider);
+    */
     // Initialize your dapp here like getting user accounts etc
     // Load account
     const accounts = await web3.eth.getAccounts();

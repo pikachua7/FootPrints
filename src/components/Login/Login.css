@@ -1,0 +1,27 @@
+.not-found{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #070706;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* padding-left: 0px;
+    margin-left: 0px;
+    left: 0px; */
+}
+
+
+.forgif {
+    height: 800px;
+    width: 800px;
+    align-items: left;
+}
+
+.arrow {
+    height: 300px;
+    width: 400px;
+    align-items: right;
+    margin-left: 150px;
+}

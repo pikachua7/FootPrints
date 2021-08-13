@@ -5,6 +5,10 @@ import IconButton from '@material-ui/core/IconButton';
 import BeachAccessIcon from '@material-ui/icons/BeachAccess';
 import BeenhereIcon from '@material-ui/icons/Beenhere';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+//import Portis from '@portis/web3';
+import styles from './Feed.module.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Row, Col, Container} from 'react-bootstrap';
 
 const style = {
     content: {
@@ -40,8 +44,13 @@ class Feed extends Component {
     async loadBlockchainData() {
 
         const web3 = window.web3;
-
-
+        /*const myLocalPOANode = {
+            nodeUrl: "https://matic-mumbai.chainstacklabs.com",
+            chainId: 80001,
+        };
+        const portis = new Portis('c0f465f7-8289-42c1-98a6-cec427ceecc6', myLocalPOANode);
+        const web3 = new Web3(portis.provider);
+        */
         // Initialize your dapp here like getting user accounts etc
         // Load account
         const accounts = await web3.eth.getAccounts();
@@ -136,11 +145,37 @@ class Feed extends Component {
                                 >
                                     {console.log(this.state.cr_latitude, this.state.cr_longitude)}
                                     {this.state.feedPosts.map((feedPost) => {
-                                        if ((this.state.cr_latitude <= (feedPost[0][4])+1 && this.state.cr_latitude > (feedPost[0][4])-1) && this.state.cr_longitude <= (feedPost[0][5])+1 >  this.state.cr_longitude <= (feedPost[0][5])-1){
+                                        if ((this.state.cr_latitude <= (feedPost[0][4])+1 && this.state.cr_latitude > (feedPost[0][4])-1) && this.state.cr_longitude <= (feedPost[0][5])+1 >  this.state.cr_longitude <= (feedPost[0][5])-1) {
 
                                             return (
-                                                <div className="card mb-4">
+                                                <Container fluid className={styles.body1}>
+                                                    <Row className={styles.holder}>
+                                                        <Col md={5}>
+                                                            <Row className={styles.imagebox}>
+                                                                <img src={feedPost[0][3]} className={styles.forimg}/>
+                                                            </Row>
+                                                        </Col>
+                                                        <Col md={7} className={styles.textCol}>
+                                                            <IconButton>
+                                                                <AccountCircleIcon className={styles.foricon}/>
+                                                            </IconButton>
+                                                            <h6 className={styles.textpart}>
+                                                                {feedPost[0][6]} 
+                                                            </h6>
+                                                            <p className={styles.heading}>
+                                                            {feedPost[0][1]}  
+                                                            </p>
+                                                            <p className={styles.text}>
+                                                            {feedPost[0][2]}
+                                                            </p>
+                                                        </Col>
+                                                    </Row>
+                                                </Container>
 
+
+                                                /*
+                                                <div className="card mb-4">
+                                                 
                                                     <div className="card-header">
                                                         <small className="text-muted">
                                                             <IconButton>
@@ -164,18 +199,19 @@ class Feed extends Component {
                                                             </small>
                                                         </div>
                                                     </div>
+                                                    
                                                     <ul
                                                         id="imageList"
                                                         className="list-group list-group-flush"
                                                     >
                                                         <li className="list-group-item" >
                                                             <p className="text-center">
-                                                                {/* {feedPost[0][4]},{feedPost[0][5]} */}
                                                                 {console.log(this.state.cr_latitude, this.state.cr_longitude)}
 
                                                                 <img
+                                                                    className={Modules.forimg}
                                                                     src={feedPost[0][3]}
-                                                                    style={{ maxWidth: "420px" }}
+                                                                    alt=""
                                                                 />
                                                             </p>
                                                             <IconButton>
@@ -186,6 +222,7 @@ class Feed extends Component {
 
                                                     </ul>
                                                 </div>
+                                                */
                                             );
                                         }
                                     })}

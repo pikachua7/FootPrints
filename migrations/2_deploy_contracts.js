@@ -4,7 +4,10 @@ const Photography = artifacts.require("Photography");
 module.exports = function(deployer) {
   deployer.deploy(NFT,"Hello","World");
   deployer.deploy(Marketplace);
+<<<<<<< Updated upstream
   deployer.deploy(Photography);
+=======
+>>>>>>> Stashed changes
 };
 
 

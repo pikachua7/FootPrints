@@ -62,7 +62,14 @@ class Profile extends Component {
   }
 
   async loadBlockchainData() {
-    
+    /*
+    const myLocalPOANode = {
+      nodeUrl: "https://matic-mumbai.chainstacklabs.com",
+      chainId: 80001,
+    };
+    const portis = new Portis('c0f465f7-8289-42c1-98a6-cec427ceecc6', myLocalPOANode);
+    const web3 = new Web3(portis.provider);
+    */
     const web3 = window.web3;
 
     // Initialize your dapp here like getting user accounts etc

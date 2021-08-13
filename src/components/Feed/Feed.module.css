@@ -1,0 +1,76 @@
+.forimg {
+    max-width: 420px;
+    transition: 300ms ease-in-out;
+    z-index: 1;
+    height: 300px; 
+    width: 100%;
+    margin: auto;
+}
+
+.forimg:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+
+
+.body1{
+    margin: 0;
+    padding: 25px;
+    margin-bottom: 50px;
+    background-size: 75% 100%;
+    background-repeat: no-repeat;
+}
+
+.body1{
+    background-position-x: right;
+}
+
+
+.imagebox{
+    margin: 0;
+    padding: 0;
+}
+
+.textCol{
+    margin: 0;
+    padding: 2vw;
+}
+
+.heading{
+    margin: 0;
+    padding: 1vw;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+    color: rgb(80, 80, 80);
+}
+
+.text{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5vw;
+    line-height: 1.8;
+    text-align: center;
+    color: rgb(80, 80, 80);
+    margin-top: 10px;
+}
+
+.body1{
+    background-color: #20aa91;
+    background-image: url("img2.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.textpart {
+    font-size: small;
+    margin-left: 120px;
+     margin-top: -49px;
+}
+
+.foricon {
+    margin-left: 80px;
+    color: black;
+    margin-top: -60px;
+}

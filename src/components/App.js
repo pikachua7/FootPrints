@@ -9,6 +9,8 @@ import Premium from './Premium/Premium';
 import Profile from './Profile/Profile';
 import Photography from './PhotographyNFT/Photography';
 import MarketPlace from './MarketPlace/MarketPlace';
+import Login from './Login/Login';
+import Portis from '@portis/web3';
 
 class App extends Component {
   async componentWillMount() {
@@ -32,6 +34,16 @@ class App extends Component {
   async loadBlockchainData() {
     const web3 = window.web3;
 
+    // const portis = new Portis('c0f465f7-8289-42c1-98a6-cec427ceecc6', 'maticMumbai');
+    // const web3 = new Web3(portis.provider);
+    /*
+    const myLocalPOANode = {
+      nodeUrl: "https://matic-mumbai.chainstacklabs.com",
+      chainId: 80001,
+    };
+    const portis = new Portis('c0f465f7-8289-42c1-98a6-cec427ceecc6', myLocalPOANode);
+    const web3 = new Web3(portis.provider);
+    */
     // Load account
     const accounts = await web3.eth.getAccounts()
     this.setState({ account: accounts[0] })
@@ -66,7 +78,8 @@ class App extends Component {
       <Router>
         <Navbar account={this.state.account} />
         <Switch>
-          <Route path="/" exact component={() => <Upload />} />
+          <Route path="/" exact component={() => <Login />} />
+          <Route path="/upload" exact component={() => <Upload />} />
           <Route path="/feed" exact component={() => <Feed />} />
           <Route path="/premium" exact component={() => <Premium />} />
           <Route path="/profile" exact component={() => <Profile />} />
