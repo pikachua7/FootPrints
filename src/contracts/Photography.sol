@@ -46,27 +46,27 @@ contract Photography is PhotographyStorage{
         uint256 assetId,
         uint256 priceInWei) public payable{
         
-        // address sender = msg.sender; //buyer
+        address sender = msg.sender; //buyer
     
-        // Photo memory photo = photoByAssetId[nftAddress][assetId];
+        Photo memory photo = photoByAssetId[nftAddress][assetId];
     
-        // require(photo.id != 0, "Asset not published");
-        // require(priceInWei == msg.value, "msg.value is not correct");
-        // address payable seller = photo.owner;
+        require(photo.id != 0, "Asset not published");
+        require(priceInWei == msg.value, "msg.value is not correct");
+        address payable seller = photo.owner;
         
         
-        // delete photoByAssetId[nftAddress][assetId];
+        delete photoByAssetId[nftAddress][assetId];
         
-        // // Transfer sale amount to seller
-        // seller.transfer(msg.value);
+        // Transfer sale amount to seller
+        seller.transfer(msg.value);
         
-        // NFT(nftAddress).approve(sender, assetId);
-        //Transfer asset owner
-        // NFT(nftAddress).transferFrom(
-        //   seller,
-        //   sender,
-        //   assetId
-        // );
+        NFT(nftAddress).approve(sender, assetId);
+        // Transfer asset owner
+        NFT(nftAddress).transferFrom(
+          seller,
+          sender,
+          assetId
+        );
         
     }
 }

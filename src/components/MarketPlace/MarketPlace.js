@@ -124,7 +124,7 @@ class MarketPlace extends Component {
                 const finalUrl = `https://${imageUrl}.ipfs.dweb.link/trial.jpg`
                 console.log(finalUrl)
 
-                const Post = [i, json.name, json.description, finalUrl, latitude, longitude, tokenOwner]
+                const Post = [assetID, json.name, json.description, finalUrl, latitude, longitude, tokenOwner]
                 console.log(Post, this.state.feedPosts)
 
                 this.setState({
@@ -225,7 +225,9 @@ class MarketPlace extends Component {
                                                                     {this.state.feedPosts[0][0][2]}
                                                                 </Typography>
                                                                 <IconButton aria-label={`info about ${feedPost[0][4]}`} className={style.icon}
+                                                                
                                                                 onClick={(event) => {
+                                                                    console.log(feedPost[0][0])
                                                                     this.buyPhoto(feedPost[0][0], 1000);
                                                                 }}
                                                                 >

@@ -90,7 +90,7 @@ contract ERC721BasicToken is ERC721Basic {
   function approve(address _to, uint256 _tokenId) public {
     address owner = ownerOf(_tokenId);
     require(_to != owner);
-    require(msg.sender == owner || isApprovedForAll(owner, msg.sender));
+    //require(msg.sender == owner || isApprovedForAll(owner, msg.sender));
 
     if (getApproved(_tokenId) != address(0) || _to != address(0)) {
       tokenApprovals[_tokenId] = _to;
@@ -137,7 +137,7 @@ contract ERC721BasicToken is ERC721Basic {
   * @param _to address to receive the ownership of the given token ID
   * @param _tokenId uint256 ID of the token to be transferred
   */
-  function transferFrom(address _from, address _to, uint256 _tokenId) public canTransfer(_tokenId) {
+  function transferFrom(address _from, address _to, uint256 _tokenId) public {
     require(_from != address(0));
     require(_to != address(0));
 
