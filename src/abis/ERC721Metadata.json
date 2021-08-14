@@ -1713,7 +1713,11 @@
   },
   "networks": {},
   "schemaVersion": "3.3.3",
+<<<<<<< Updated upstream
   "updatedAt": "2021-08-14T19:15:29.528Z",
+=======
+  "updatedAt": "2021-08-14T17:28:45.935Z",
+>>>>>>> Stashed changes
   "devdoc": {
     "details": "See https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md",
     "methods": {},

@@ -298,7 +298,11 @@
       },
       {
         "attributes": {
+<<<<<<< Updated upstream
           "SourceUnit": 784,
+=======
+          "SourceUnit": 800,
+>>>>>>> Stashed changes
           "absolutePath": "/D/B.E/VII sem/Project/Footprints/src/contracts/ERC721Receiver.sol",
           "file": "./ERC721Receiver.sol",
           "scope": 767,
@@ -535,7 +539,11 @@
   },
   "networks": {},
   "schemaVersion": "3.3.3",
+<<<<<<< Updated upstream
   "updatedAt": "2021-08-14T19:13:10.706Z",
+=======
+  "updatedAt": "2021-08-13T17:36:41.936Z",
+>>>>>>> Stashed changes
   "devdoc": {
     "methods": {}
   },

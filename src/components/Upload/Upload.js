@@ -16,7 +16,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import JIMP from "jimp";
-import { TextField, Paper, Typography } from "@material-ui/core";
+//import { TextField, Paper, Typography } from "@material-ui/core";
 //import bg from './trial.jpg';
 
 const apiKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDU2NGI0NjlFYTVlZTIxODNiNDQxNTUwMWRCQWYxNzBiQjdDYTkxOGMiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTYyNjg1Njg2OTkzMiwibmFtZSI6IkZvb3RwcmludCJ9.QMxvqcHpZJghwlDwMtM4Sfi4_rrAEhljRNrkTDuo1kg'

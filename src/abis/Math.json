@@ -1806,7 +1806,11 @@
   },
   "networks": {},
   "schemaVersion": "3.3.3",
+<<<<<<< Updated upstream
   "updatedAt": "2021-08-14T19:13:10.732Z",
+=======
+  "updatedAt": "2021-08-13T17:36:41.965Z",
+>>>>>>> Stashed changes
   "devdoc": {
     "details": "Assorted math operations",
     "methods": {},

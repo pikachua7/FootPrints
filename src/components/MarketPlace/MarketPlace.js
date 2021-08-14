@@ -12,6 +12,10 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 import { red } from '@material-ui/core/colors';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Row, Col, Container} from 'react-bootstrap';
+import styles from './Market.module.css'
+import { StylesProvider } from "@material-ui/core";
 
 
 const style = {
@@ -200,6 +204,78 @@ class MarketPlace extends Component {
                                        if ((this.state.cr_latitude <= (feedPost[0][4])+2 && this.state.cr_latitude > (feedPost[0][4])-2) && this.state.cr_longitude <= (feedPost[0][5])+2 >  this.state.cr_longitude <= (feedPost[0][5])-2){
 
                                             return (
+
+                                                <Container fluid className={styles.body1}>
+                                                <Row className={styles.holder}>
+                                                    <Col md={5}>
+                                                    
+                                                        <Row className={styles.imagebox}>
+                                                            <img src={feedPost[0][3]} className={styles.forimg}/>
+                                                        </Row>
+                                                    </Col>
+                                                    <Col md={7} className={styles.textCol}>
+                                                        
+                                                        <h6 className={styles.textpart}>
+                                                            {feedPost[0][6]} 
+                                                        </h6>
+                                                        <p className={styles.heading}>
+                                                        {feedPost[0][1]}  
+                                                        </p>
+                                                        <p className={styles.text}>
+                                                        {feedPost[0][2]}
+                                                        
+                                                        <br></br>
+                                                        <IconButton aria-label={`info about ${feedPost[0][4]}`} className={styles.foricon}
+                                                                    
+                                                                    onClick={(event) => {
+                                                                    this.buyPhoto(feedPost[0][0], 1000);
+                                                                }}
+                                                                >
+                                                                <MonetizationOnIcon style={{ color: "black"}} className={styles.foricon} />
+                                                        </IconButton>
+                                                        </p>
+                                                    </Col>
+                                                </Row>
+                                            </Container>
+
+                                                // <Container fluid className={styles.body2}>
+                                                //         <Row className={styles.holder}>
+                                                //             <Col md={5} className={styles.smallhide}>
+                                                //                 <Row className={styles.imagebox}>
+                                                //                     <img src={feedPost[0][3]} className={styles.image}/>
+                                                //                     <p className={styles.foracc}>
+                                                //                         {this.state.feedPosts[0][0][6]}
+                                                //                     </p>
+                                                //                     <IconButton aria-label={`info about ${feedPost[0][4]}`} className={styles.icon}
+                                                //                     onClick={(event) => {
+                                                //                     this.buyPhoto(feedPost[0][0], 1000);
+                                                //                 }}
+                                                //                 >
+                                                //                 <MonetizationOnIcon style={{ color: "black",size:'20px'}} />
+                                                //             </IconButton>
+                                                //                 </Row>
+                                                                
+                                                //             </Col>
+                                                           
+                                                //              <Col md={7} className={styles.textCol}>
+                                                //                 <p className={styles.heading}>
+                                                //                 {this.state.feedPosts[0][0][1]}
+                                                //                 </p>
+                                                                
+                                                //                 <p className={styles.text}>
+                                                //                 {this.state.feedPosts[0][0][2]}
+                                                //                 </p>
+
+                                                //             </Col>
+                                                //         </Row>
+                                                //     </Container>
+
+
+
+
+
+
+                                                /*
                                                 <Card className={style.root} style={{ paddingBottom: '2%' }}>
                                                     <CardHeader
                                                         avatar={
@@ -237,6 +313,7 @@ class MarketPlace extends Component {
                                                         </div>
                                                     </div>
                                                 </Card>
+                                                */
                                             );
                                         }
                                     })}

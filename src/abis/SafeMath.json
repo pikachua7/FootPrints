@@ -12,6 +12,7 @@
     "absolutePath": "/D/B.E/VII sem/Project/Footprints/src/contracts/SafeMath.sol",
     "exportedSymbols": {
       "SafeMath": [
+<<<<<<< Updated upstream
         1964
       ]
     },
@@ -20,6 +21,16 @@
     "nodes": [
       {
         "id": 1872,
+=======
+        1915
+      ]
+    },
+    "id": 1916,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1823,
+>>>>>>> Stashed changes
         "literals": [
           "solidity",
           "^",
@@ -35,16 +46,26 @@
         "contractKind": "library",
         "documentation": "@title SafeMath\n@dev Math operations with safety checks that throw on error",
         "fullyImplemented": true,
+<<<<<<< Updated upstream
         "id": 1964,
         "linearizedBaseContracts": [
           1964
+=======
+        "id": 1915,
+        "linearizedBaseContracts": [
+          1915
+>>>>>>> Stashed changes
         ],
         "name": "SafeMath",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
+<<<<<<< Updated upstream
               "id": 1904,
+=======
+              "id": 1855,
+>>>>>>> Stashed changes
               "nodeType": "Block",
               "src": "282:113:14",
               "statements": [
@@ -55,18 +76,30 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
+<<<<<<< Updated upstream
                     "id": 1883,
+=======
+                    "id": 1834,
+>>>>>>> Stashed changes
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
+<<<<<<< Updated upstream
                       "id": 1881,
                       "name": "a",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 1874,
+=======
+                      "id": 1832,
+                      "name": "a",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1825,
+>>>>>>> Stashed changes
                       "src": "293:1:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -78,7 +111,11 @@
                     "rightExpression": {
                       "argumentTypes": null,
                       "hexValue": "30",
+<<<<<<< Updated upstream
                       "id": 1882,
+=======
+                      "id": 1833,
+>>>>>>> Stashed changes
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -100,11 +137,19 @@
                     }
                   },
                   "falseBody": null,
+<<<<<<< Updated upstream
                   "id": 1887,
                   "nodeType": "IfStatement",
                   "src": "289:37:14",
                   "trueBody": {
                     "id": 1886,
+=======
+                  "id": 1838,
+                  "nodeType": "IfStatement",
+                  "src": "289:37:14",
+                  "trueBody": {
+                    "id": 1837,
+>>>>>>> Stashed changes
                     "nodeType": "Block",
                     "src": "301:25:14",
                     "statements": [
@@ -112,7 +157,11 @@
                         "expression": {
                           "argumentTypes": null,
                           "hexValue": "30",
+<<<<<<< Updated upstream
                           "id": 1884,
+=======
+                          "id": 1835,
+>>>>>>> Stashed changes
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -127,8 +176,13 @@
                           },
                           "value": "0"
                         },
+<<<<<<< Updated upstream
                         "functionReturnParameters": 1880,
                         "id": 1885,
+=======
+                        "functionReturnParameters": 1831,
+                        "id": 1836,
+>>>>>>> Stashed changes
                         "nodeType": "Return",
                         "src": "310:8:14"
                       }
@@ -137,15 +191,26 @@
                 },
                 {
                   "assignments": [
+<<<<<<< Updated upstream
                     1889
+=======
+                    1840
+>>>>>>> Stashed changes
                   ],
                   "declarations": [
                     {
                       "constant": false,
+<<<<<<< Updated upstream
                       "id": 1889,
                       "name": "c",
                       "nodeType": "VariableDeclaration",
                       "scope": 1904,
+=======
+                      "id": 1840,
+                      "name": "c",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1855,
+>>>>>>> Stashed changes
                       "src": "332:9:14",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -154,7 +219,11 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
+<<<<<<< Updated upstream
                         "id": 1888,
+=======
+                        "id": 1839,
+>>>>>>> Stashed changes
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "332:7:14",
@@ -167,25 +236,41 @@
                       "visibility": "internal"
                     }
                   ],
+<<<<<<< Updated upstream
                   "id": 1893,
+=======
+                  "id": 1844,
+>>>>>>> Stashed changes
                   "initialValue": {
                     "argumentTypes": null,
                     "commonType": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
+<<<<<<< Updated upstream
                     "id": 1892,
+=======
+                    "id": 1843,
+>>>>>>> Stashed changes
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
+<<<<<<< Updated upstream
                       "id": 1890,
                       "name": "a",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 1874,
+=======
+                      "id": 1841,
+                      "name": "a",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1825,
+>>>>>>> Stashed changes
                       "src": "344:1:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -196,11 +281,19 @@
                     "operator": "*",
                     "rightExpression": {
                       "argumentTypes": null,
+<<<<<<< Updated upstream
                       "id": 1891,
                       "name": "b",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 1876,
+=======
+                      "id": 1842,
+                      "name": "b",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1827,
+>>>>>>> Stashed changes
                       "src": "348:1:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -226,7 +319,11 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
+<<<<<<< Updated upstream
                         "id": 1899,
+=======
+                        "id": 1850,
+>>>>>>> Stashed changes
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -237,18 +334,30 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
+<<<<<<< Updated upstream
                           "id": 1897,
+=======
+                          "id": 1848,
+>>>>>>> Stashed changes
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
                             "argumentTypes": null,
+<<<<<<< Updated upstream
                             "id": 1895,
                             "name": "c",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 1889,
+=======
+                            "id": 1846,
+                            "name": "c",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1840,
+>>>>>>> Stashed changes
                             "src": "363:1:14",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -259,11 +368,19 @@
                           "operator": "/",
                           "rightExpression": {
                             "argumentTypes": null,
+<<<<<<< Updated upstream
                             "id": 1896,
                             "name": "a",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 1874,
+=======
+                            "id": 1847,
+                            "name": "a",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1825,
+>>>>>>> Stashed changes
                             "src": "367:1:14",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -280,11 +397,19 @@
                         "operator": "==",
                         "rightExpression": {
                           "argumentTypes": null,
+<<<<<<< Updated upstream
                           "id": 1898,
                           "name": "b",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 1876,
+=======
+                          "id": 1849,
+                          "name": "b",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1827,
+>>>>>>> Stashed changes
                           "src": "372:1:14",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -305,18 +430,30 @@
                           "typeString": "bool"
                         }
                       ],
+<<<<<<< Updated upstream
                       "id": 1894,
                       "name": "assert",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 1968,
+=======
+                      "id": 1845,
+                      "name": "assert",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1919,
+>>>>>>> Stashed changes
                       "src": "356:6:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_assert_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
+<<<<<<< Updated upstream
                     "id": 1900,
+=======
+                    "id": 1851,
+>>>>>>> Stashed changes
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -330,48 +467,80 @@
                       "typeString": "tuple()"
                     }
                   },
+<<<<<<< Updated upstream
                   "id": 1901,
+=======
+                  "id": 1852,
+>>>>>>> Stashed changes
                   "nodeType": "ExpressionStatement",
                   "src": "356:18:14"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
+<<<<<<< Updated upstream
                     "id": 1902,
                     "name": "c",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 1889,
+=======
+                    "id": 1853,
+                    "name": "c",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 1840,
+>>>>>>> Stashed changes
                     "src": "388:1:14",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
+<<<<<<< Updated upstream
                   "functionReturnParameters": 1880,
                   "id": 1903,
+=======
+                  "functionReturnParameters": 1831,
+                  "id": 1854,
+>>>>>>> Stashed changes
                   "nodeType": "Return",
                   "src": "381:8:14"
                 }
               ]
             },
             "documentation": "@dev Multiplies two numbers, throws on overflow.",
+<<<<<<< Updated upstream
             "id": 1905,
+=======
+            "id": 1856,
+>>>>>>> Stashed changes
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "mul",
             "nodeType": "FunctionDefinition",
             "parameters": {
+<<<<<<< Updated upstream
               "id": 1877,
+=======
+              "id": 1828,
+>>>>>>> Stashed changes
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
+<<<<<<< Updated upstream
                   "id": 1874,
                   "name": "a",
                   "nodeType": "VariableDeclaration",
                   "scope": 1905,
+=======
+                  "id": 1825,
+                  "name": "a",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1856,
+>>>>>>> Stashed changes
                   "src": "228:9:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -380,7 +549,11 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
+<<<<<<< Updated upstream
                     "id": 1873,
+=======
+                    "id": 1824,
+>>>>>>> Stashed changes
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "228:7:14",
@@ -394,10 +567,17 @@
                 },
                 {
                   "constant": false,
+<<<<<<< Updated upstream
                   "id": 1876,
                   "name": "b",
                   "nodeType": "VariableDeclaration",
                   "scope": 1905,
+=======
+                  "id": 1827,
+                  "name": "b",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1856,
+>>>>>>> Stashed changes
                   "src": "239:9:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -406,7 +586,11 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
+<<<<<<< Updated upstream
                     "id": 1875,
+=======
+                    "id": 1826,
+>>>>>>> Stashed changes
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "239:7:14",
@@ -422,15 +606,26 @@
               "src": "227:22:14"
             },
             "returnParameters": {
+<<<<<<< Updated upstream
               "id": 1880,
+=======
+              "id": 1831,
+>>>>>>> Stashed changes
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
+<<<<<<< Updated upstream
                   "id": 1879,
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 1905,
+=======
+                  "id": 1830,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1856,
+>>>>>>> Stashed changes
                   "src": "273:7:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -439,7 +634,11 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
+<<<<<<< Updated upstream
                     "id": 1878,
+=======
+                    "id": 1829,
+>>>>>>> Stashed changes
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "273:7:14",
@@ -454,7 +653,11 @@
               ],
               "src": "272:9:14"
             },
+<<<<<<< Updated upstream
             "scope": 1964,
+=======
+            "scope": 1915,
+>>>>>>> Stashed changes
             "src": "215:180:14",
             "stateMutability": "pure",
             "superFunction": null,
@@ -462,7 +665,11 @@
           },
           {
             "body": {
+<<<<<<< Updated upstream
               "id": 1918,
+=======
+              "id": 1869,
+>>>>>>> Stashed changes
               "nodeType": "Block",
               "src": "549:210:14",
               "statements": [
@@ -473,18 +680,30 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
+<<<<<<< Updated upstream
                     "id": 1916,
+=======
+                    "id": 1867,
+>>>>>>> Stashed changes
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
+<<<<<<< Updated upstream
                       "id": 1914,
                       "name": "a",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 1907,
+=======
+                      "id": 1865,
+                      "name": "a",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1858,
+>>>>>>> Stashed changes
                       "src": "748:1:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -495,11 +714,19 @@
                     "operator": "/",
                     "rightExpression": {
                       "argumentTypes": null,
+<<<<<<< Updated upstream
                       "id": 1915,
                       "name": "b",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 1909,
+=======
+                      "id": 1866,
+                      "name": "b",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1860,
+>>>>>>> Stashed changes
                       "src": "752:1:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -512,30 +739,50 @@
                       "typeString": "uint256"
                     }
                   },
+<<<<<<< Updated upstream
                   "functionReturnParameters": 1913,
                   "id": 1917,
+=======
+                  "functionReturnParameters": 1864,
+                  "id": 1868,
+>>>>>>> Stashed changes
                   "nodeType": "Return",
                   "src": "741:12:14"
                 }
               ]
             },
             "documentation": "@dev Integer division of two numbers, truncating the quotient.",
+<<<<<<< Updated upstream
             "id": 1919,
+=======
+            "id": 1870,
+>>>>>>> Stashed changes
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "div",
             "nodeType": "FunctionDefinition",
             "parameters": {
+<<<<<<< Updated upstream
               "id": 1910,
+=======
+              "id": 1861,
+>>>>>>> Stashed changes
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
+<<<<<<< Updated upstream
                   "id": 1907,
                   "name": "a",
                   "nodeType": "VariableDeclaration",
                   "scope": 1919,
+=======
+                  "id": 1858,
+                  "name": "a",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1870,
+>>>>>>> Stashed changes
                   "src": "495:9:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -544,7 +791,11 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
+<<<<<<< Updated upstream
                     "id": 1906,
+=======
+                    "id": 1857,
+>>>>>>> Stashed changes
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "495:7:14",
@@ -558,10 +809,17 @@
                 },
                 {
                   "constant": false,
+<<<<<<< Updated upstream
                   "id": 1909,
                   "name": "b",
                   "nodeType": "VariableDeclaration",
                   "scope": 1919,
+=======
+                  "id": 1860,
+                  "name": "b",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1870,
+>>>>>>> Stashed changes
                   "src": "506:9:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -570,7 +828,11 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
+<<<<<<< Updated upstream
                     "id": 1908,
+=======
+                    "id": 1859,
+>>>>>>> Stashed changes
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "506:7:14",
@@ -586,15 +848,26 @@
               "src": "494:22:14"
             },
             "returnParameters": {
+<<<<<<< Updated upstream
               "id": 1913,
+=======
+              "id": 1864,
+>>>>>>> Stashed changes
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
+<<<<<<< Updated upstream
                   "id": 1912,
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 1919,
+=======
+                  "id": 1863,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1870,
+>>>>>>> Stashed changes
                   "src": "540:7:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -603,7 +876,11 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
+<<<<<<< Updated upstream
                     "id": 1911,
+=======
+                    "id": 1862,
+>>>>>>> Stashed changes
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "540:7:14",
@@ -618,7 +895,11 @@
               ],
               "src": "539:9:14"
             },
+<<<<<<< Updated upstream
             "scope": 1964,
+=======
+            "scope": 1915,
+>>>>>>> Stashed changes
             "src": "482:277:14",
             "stateMutability": "pure",
             "superFunction": null,
@@ -626,7 +907,11 @@
           },
           {
             "body": {
+<<<<<<< Updated upstream
               "id": 1938,
+=======
+              "id": 1889,
+>>>>>>> Stashed changes
               "nodeType": "Block",
               "src": "943:46:14",
               "statements": [
@@ -640,18 +925,30 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
+<<<<<<< Updated upstream
                         "id": 1931,
+=======
+                        "id": 1882,
+>>>>>>> Stashed changes
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
+<<<<<<< Updated upstream
                           "id": 1929,
                           "name": "b",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 1923,
+=======
+                          "id": 1880,
+                          "name": "b",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1874,
+>>>>>>> Stashed changes
                           "src": "957:1:14",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -662,11 +959,19 @@
                         "operator": "<=",
                         "rightExpression": {
                           "argumentTypes": null,
+<<<<<<< Updated upstream
                           "id": 1930,
                           "name": "a",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 1921,
+=======
+                          "id": 1881,
+                          "name": "a",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1872,
+>>>>>>> Stashed changes
                           "src": "962:1:14",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -687,18 +992,30 @@
                           "typeString": "bool"
                         }
                       ],
+<<<<<<< Updated upstream
                       "id": 1928,
                       "name": "assert",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 1968,
+=======
+                      "id": 1879,
+                      "name": "assert",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1919,
+>>>>>>> Stashed changes
                       "src": "950:6:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_assert_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
+<<<<<<< Updated upstream
                     "id": 1932,
+=======
+                    "id": 1883,
+>>>>>>> Stashed changes
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -712,7 +1029,11 @@
                       "typeString": "tuple()"
                     }
                   },
+<<<<<<< Updated upstream
                   "id": 1933,
+=======
+                  "id": 1884,
+>>>>>>> Stashed changes
                   "nodeType": "ExpressionStatement",
                   "src": "950:14:14"
                 },
@@ -723,18 +1044,30 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
+<<<<<<< Updated upstream
                     "id": 1936,
+=======
+                    "id": 1887,
+>>>>>>> Stashed changes
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
+<<<<<<< Updated upstream
                       "id": 1934,
                       "name": "a",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 1921,
+=======
+                      "id": 1885,
+                      "name": "a",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1872,
+>>>>>>> Stashed changes
                       "src": "978:1:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -745,11 +1078,19 @@
                     "operator": "-",
                     "rightExpression": {
                       "argumentTypes": null,
+<<<<<<< Updated upstream
                       "id": 1935,
                       "name": "b",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 1923,
+=======
+                      "id": 1886,
+                      "name": "b",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1874,
+>>>>>>> Stashed changes
                       "src": "982:1:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -762,30 +1103,50 @@
                       "typeString": "uint256"
                     }
                   },
+<<<<<<< Updated upstream
                   "functionReturnParameters": 1927,
                   "id": 1937,
+=======
+                  "functionReturnParameters": 1878,
+                  "id": 1888,
+>>>>>>> Stashed changes
                   "nodeType": "Return",
                   "src": "971:12:14"
                 }
               ]
             },
             "documentation": "@dev Subtracts two numbers, throws on overflow (i.e. if subtrahend is greater than minuend).",
+<<<<<<< Updated upstream
             "id": 1939,
+=======
+            "id": 1890,
+>>>>>>> Stashed changes
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "sub",
             "nodeType": "FunctionDefinition",
             "parameters": {
+<<<<<<< Updated upstream
               "id": 1924,
+=======
+              "id": 1875,
+>>>>>>> Stashed changes
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
+<<<<<<< Updated upstream
                   "id": 1921,
                   "name": "a",
                   "nodeType": "VariableDeclaration",
                   "scope": 1939,
+=======
+                  "id": 1872,
+                  "name": "a",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1890,
+>>>>>>> Stashed changes
                   "src": "889:9:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -794,7 +1155,11 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
+<<<<<<< Updated upstream
                     "id": 1920,
+=======
+                    "id": 1871,
+>>>>>>> Stashed changes
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "889:7:14",
@@ -808,10 +1173,17 @@
                 },
                 {
                   "constant": false,
+<<<<<<< Updated upstream
                   "id": 1923,
                   "name": "b",
                   "nodeType": "VariableDeclaration",
                   "scope": 1939,
+=======
+                  "id": 1874,
+                  "name": "b",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1890,
+>>>>>>> Stashed changes
                   "src": "900:9:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -820,7 +1192,11 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
+<<<<<<< Updated upstream
                     "id": 1922,
+=======
+                    "id": 1873,
+>>>>>>> Stashed changes
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "900:7:14",
@@ -836,15 +1212,26 @@
               "src": "888:22:14"
             },
             "returnParameters": {
+<<<<<<< Updated upstream
               "id": 1927,
+=======
+              "id": 1878,
+>>>>>>> Stashed changes
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
+<<<<<<< Updated upstream
                   "id": 1926,
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 1939,
+=======
+                  "id": 1877,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1890,
+>>>>>>> Stashed changes
                   "src": "934:7:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -853,7 +1240,11 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
+<<<<<<< Updated upstream
                     "id": 1925,
+=======
+                    "id": 1876,
+>>>>>>> Stashed changes
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "934:7:14",
@@ -868,7 +1259,11 @@
               ],
               "src": "933:9:14"
             },
+<<<<<<< Updated upstream
             "scope": 1964,
+=======
+            "scope": 1915,
+>>>>>>> Stashed changes
             "src": "876:113:14",
             "stateMutability": "pure",
             "superFunction": null,
@@ -876,21 +1271,36 @@
           },
           {
             "body": {
+<<<<<<< Updated upstream
               "id": 1962,
+=======
+              "id": 1913,
+>>>>>>> Stashed changes
               "nodeType": "Block",
               "src": "1123:66:14",
               "statements": [
                 {
                   "assignments": [
+<<<<<<< Updated upstream
                     1949
+=======
+                    1900
+>>>>>>> Stashed changes
                   ],
                   "declarations": [
                     {
                       "constant": false,
+<<<<<<< Updated upstream
                       "id": 1949,
                       "name": "c",
                       "nodeType": "VariableDeclaration",
                       "scope": 1962,
+=======
+                      "id": 1900,
+                      "name": "c",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 1913,
+>>>>>>> Stashed changes
                       "src": "1130:9:14",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -899,7 +1309,11 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
+<<<<<<< Updated upstream
                         "id": 1948,
+=======
+                        "id": 1899,
+>>>>>>> Stashed changes
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1130:7:14",
@@ -912,25 +1326,41 @@
                       "visibility": "internal"
                     }
                   ],
+<<<<<<< Updated upstream
                   "id": 1953,
+=======
+                  "id": 1904,
+>>>>>>> Stashed changes
                   "initialValue": {
                     "argumentTypes": null,
                     "commonType": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
+<<<<<<< Updated upstream
                     "id": 1952,
+=======
+                    "id": 1903,
+>>>>>>> Stashed changes
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
+<<<<<<< Updated upstream
                       "id": 1950,
                       "name": "a",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 1941,
+=======
+                      "id": 1901,
+                      "name": "a",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1892,
+>>>>>>> Stashed changes
                       "src": "1142:1:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -941,11 +1371,19 @@
                     "operator": "+",
                     "rightExpression": {
                       "argumentTypes": null,
+<<<<<<< Updated upstream
                       "id": 1951,
                       "name": "b",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 1943,
+=======
+                      "id": 1902,
+                      "name": "b",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1894,
+>>>>>>> Stashed changes
                       "src": "1146:1:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -971,18 +1409,30 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
+<<<<<<< Updated upstream
                         "id": 1957,
+=======
+                        "id": 1908,
+>>>>>>> Stashed changes
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
+<<<<<<< Updated upstream
                           "id": 1955,
                           "name": "c",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 1949,
+=======
+                          "id": 1906,
+                          "name": "c",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1900,
+>>>>>>> Stashed changes
                           "src": "1161:1:14",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -993,11 +1443,19 @@
                         "operator": ">=",
                         "rightExpression": {
                           "argumentTypes": null,
+<<<<<<< Updated upstream
                           "id": 1956,
                           "name": "a",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 1941,
+=======
+                          "id": 1907,
+                          "name": "a",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1892,
+>>>>>>> Stashed changes
                           "src": "1166:1:14",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -1018,18 +1476,30 @@
                           "typeString": "bool"
                         }
                       ],
+<<<<<<< Updated upstream
                       "id": 1954,
                       "name": "assert",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 1968,
+=======
+                      "id": 1905,
+                      "name": "assert",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1919,
+>>>>>>> Stashed changes
                       "src": "1154:6:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_assert_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
+<<<<<<< Updated upstream
                     "id": 1958,
+=======
+                    "id": 1909,
+>>>>>>> Stashed changes
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1043,48 +1513,80 @@
                       "typeString": "tuple()"
                     }
                   },
+<<<<<<< Updated upstream
                   "id": 1959,
+=======
+                  "id": 1910,
+>>>>>>> Stashed changes
                   "nodeType": "ExpressionStatement",
                   "src": "1154:14:14"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
+<<<<<<< Updated upstream
                     "id": 1960,
                     "name": "c",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 1949,
+=======
+                    "id": 1911,
+                    "name": "c",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 1900,
+>>>>>>> Stashed changes
                     "src": "1182:1:14",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
+<<<<<<< Updated upstream
                   "functionReturnParameters": 1947,
                   "id": 1961,
+=======
+                  "functionReturnParameters": 1898,
+                  "id": 1912,
+>>>>>>> Stashed changes
                   "nodeType": "Return",
                   "src": "1175:8:14"
                 }
               ]
             },
             "documentation": "@dev Adds two numbers, throws on overflow.",
+<<<<<<< Updated upstream
             "id": 1963,
+=======
+            "id": 1914,
+>>>>>>> Stashed changes
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "add",
             "nodeType": "FunctionDefinition",
             "parameters": {
+<<<<<<< Updated upstream
               "id": 1944,
+=======
+              "id": 1895,
+>>>>>>> Stashed changes
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
+<<<<<<< Updated upstream
                   "id": 1941,
                   "name": "a",
                   "nodeType": "VariableDeclaration",
                   "scope": 1963,
+=======
+                  "id": 1892,
+                  "name": "a",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1914,
+>>>>>>> Stashed changes
                   "src": "1069:9:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1093,7 +1595,11 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
+<<<<<<< Updated upstream
                     "id": 1940,
+=======
+                    "id": 1891,
+>>>>>>> Stashed changes
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1069:7:14",
@@ -1107,10 +1613,17 @@
                 },
                 {
                   "constant": false,
+<<<<<<< Updated upstream
                   "id": 1943,
                   "name": "b",
                   "nodeType": "VariableDeclaration",
                   "scope": 1963,
+=======
+                  "id": 1894,
+                  "name": "b",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1914,
+>>>>>>> Stashed changes
                   "src": "1080:9:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1119,7 +1632,11 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
+<<<<<<< Updated upstream
                     "id": 1942,
+=======
+                    "id": 1893,
+>>>>>>> Stashed changes
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1080:7:14",
@@ -1135,15 +1652,26 @@
               "src": "1068:22:14"
             },
             "returnParameters": {
+<<<<<<< Updated upstream
               "id": 1947,
+=======
+              "id": 1898,
+>>>>>>> Stashed changes
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
+<<<<<<< Updated upstream
                   "id": 1946,
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 1963,
+=======
+                  "id": 1897,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1914,
+>>>>>>> Stashed changes
                   "src": "1114:7:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1152,7 +1680,11 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
+<<<<<<< Updated upstream
                     "id": 1945,
+=======
+                    "id": 1896,
+>>>>>>> Stashed changes
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1114:7:14",
@@ -1167,14 +1699,22 @@
               ],
               "src": "1113:9:14"
             },
+<<<<<<< Updated upstream
             "scope": 1964,
+=======
+            "scope": 1915,
+>>>>>>> Stashed changes
             "src": "1056:133:14",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "internal"
           }
         ],
+<<<<<<< Updated upstream
         "scope": 1965,
+=======
+        "scope": 1916,
+>>>>>>> Stashed changes
         "src": "124:1068:14"
       }
     ],
@@ -1185,7 +1725,11 @@
       "absolutePath": "/D/B.E/VII sem/Project/Footprints/src/contracts/SafeMath.sol",
       "exportedSymbols": {
         "SafeMath": [
+<<<<<<< Updated upstream
           1964
+=======
+          1915
+>>>>>>> Stashed changes
         ]
       }
     },
@@ -1199,7 +1743,11 @@
             ".16"
           ]
         },
+<<<<<<< Updated upstream
         "id": 1872,
+=======
+        "id": 1823,
+>>>>>>> Stashed changes
         "name": "PragmaDirective",
         "src": "0:24:14"
       },
@@ -1215,10 +1763,17 @@
           "documentation": "@title SafeMath\n@dev Math operations with safety checks that throw on error",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
+<<<<<<< Updated upstream
             1964
           ],
           "name": "SafeMath",
           "scope": 1965
+=======
+            1915
+          ],
+          "name": "SafeMath",
+          "scope": 1916
+>>>>>>> Stashed changes
         },
         "children": [
           {
@@ -1231,7 +1786,11 @@
                 null
               ],
               "name": "mul",
+<<<<<<< Updated upstream
               "scope": 1964,
+=======
+              "scope": 1915,
+>>>>>>> Stashed changes
               "stateMutability": "pure",
               "superFunction": null,
               "visibility": "internal"
@@ -1243,7 +1802,11 @@
                     "attributes": {
                       "constant": false,
                       "name": "a",
+<<<<<<< Updated upstream
                       "scope": 1905,
+=======
+                      "scope": 1856,
+>>>>>>> Stashed changes
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -1256,12 +1819,20 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
+<<<<<<< Updated upstream
                         "id": 1873,
+=======
+                        "id": 1824,
+>>>>>>> Stashed changes
                         "name": "ElementaryTypeName",
                         "src": "228:7:14"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1874,
+=======
+                    "id": 1825,
+>>>>>>> Stashed changes
                     "name": "VariableDeclaration",
                     "src": "228:9:14"
                   },
@@ -1269,7 +1840,11 @@
                     "attributes": {
                       "constant": false,
                       "name": "b",
+<<<<<<< Updated upstream
                       "scope": 1905,
+=======
+                      "scope": 1856,
+>>>>>>> Stashed changes
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -1282,17 +1857,29 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
+<<<<<<< Updated upstream
                         "id": 1875,
+=======
+                        "id": 1826,
+>>>>>>> Stashed changes
                         "name": "ElementaryTypeName",
                         "src": "239:7:14"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1876,
+=======
+                    "id": 1827,
+>>>>>>> Stashed changes
                     "name": "VariableDeclaration",
                     "src": "239:9:14"
                   }
                 ],
+<<<<<<< Updated upstream
                 "id": 1877,
+=======
+                "id": 1828,
+>>>>>>> Stashed changes
                 "name": "ParameterList",
                 "src": "227:22:14"
               },
@@ -1302,7 +1889,11 @@
                     "attributes": {
                       "constant": false,
                       "name": "",
+<<<<<<< Updated upstream
                       "scope": 1905,
+=======
+                      "scope": 1856,
+>>>>>>> Stashed changes
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -1315,17 +1906,29 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
+<<<<<<< Updated upstream
                         "id": 1878,
+=======
+                        "id": 1829,
+>>>>>>> Stashed changes
                         "name": "ElementaryTypeName",
                         "src": "273:7:14"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1879,
+=======
+                    "id": 1830,
+>>>>>>> Stashed changes
                     "name": "VariableDeclaration",
                     "src": "273:7:14"
                   }
                 ],
+<<<<<<< Updated upstream
                 "id": 1880,
+=======
+                "id": 1831,
+>>>>>>> Stashed changes
                 "name": "ParameterList",
                 "src": "272:9:14"
               },
@@ -1357,11 +1960,19 @@
                               "overloadedDeclarations": [
                                 null
                               ],
+<<<<<<< Updated upstream
                               "referencedDeclaration": 1874,
                               "type": "uint256",
                               "value": "a"
                             },
                             "id": 1881,
+=======
+                              "referencedDeclaration": 1825,
+                              "type": "uint256",
+                              "value": "a"
+                            },
+                            "id": 1832,
+>>>>>>> Stashed changes
                             "name": "Identifier",
                             "src": "293:1:14"
                           },
@@ -1378,12 +1989,20 @@
                               "type": "int_const 0",
                               "value": "0"
                             },
+<<<<<<< Updated upstream
                             "id": 1882,
+=======
+                            "id": 1833,
+>>>>>>> Stashed changes
                             "name": "Literal",
                             "src": "298:1:14"
                           }
                         ],
+<<<<<<< Updated upstream
                         "id": 1883,
+=======
+                        "id": 1834,
+>>>>>>> Stashed changes
                         "name": "BinaryOperation",
                         "src": "293:6:14"
                       },
@@ -1391,7 +2010,11 @@
                         "children": [
                           {
                             "attributes": {
+<<<<<<< Updated upstream
                               "functionReturnParameters": 1880
+=======
+                              "functionReturnParameters": 1831
+>>>>>>> Stashed changes
                             },
                             "children": [
                               {
@@ -1407,29 +2030,49 @@
                                   "type": "int_const 0",
                                   "value": "0"
                                 },
+<<<<<<< Updated upstream
                                 "id": 1884,
+=======
+                                "id": 1835,
+>>>>>>> Stashed changes
                                 "name": "Literal",
                                 "src": "317:1:14"
                               }
                             ],
+<<<<<<< Updated upstream
                             "id": 1885,
+=======
+                            "id": 1836,
+>>>>>>> Stashed changes
                             "name": "Return",
                             "src": "310:8:14"
                           }
                         ],
+<<<<<<< Updated upstream
                         "id": 1886,
+=======
+                        "id": 1837,
+>>>>>>> Stashed changes
                         "name": "Block",
                         "src": "301:25:14"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1887,
+=======
+                    "id": 1838,
+>>>>>>> Stashed changes
                     "name": "IfStatement",
                     "src": "289:37:14"
                   },
                   {
                     "attributes": {
                       "assignments": [
+<<<<<<< Updated upstream
                         1889
+=======
+                        1840
+>>>>>>> Stashed changes
                       ]
                     },
                     "children": [
@@ -1437,7 +2080,11 @@
                         "attributes": {
                           "constant": false,
                           "name": "c",
+<<<<<<< Updated upstream
                           "scope": 1904,
+=======
+                          "scope": 1855,
+>>>>>>> Stashed changes
                           "stateVariable": false,
                           "storageLocation": "default",
                           "type": "uint256",
@@ -1450,12 +2097,20 @@
                               "name": "uint256",
                               "type": "uint256"
                             },
+<<<<<<< Updated upstream
                             "id": 1888,
+=======
+                            "id": 1839,
+>>>>>>> Stashed changes
                             "name": "ElementaryTypeName",
                             "src": "332:7:14"
                           }
                         ],
+<<<<<<< Updated upstream
                         "id": 1889,
+=======
+                        "id": 1840,
+>>>>>>> Stashed changes
                         "name": "VariableDeclaration",
                         "src": "332:9:14"
                       },
@@ -1480,11 +2135,19 @@
                               "overloadedDeclarations": [
                                 null
                               ],
+<<<<<<< Updated upstream
                               "referencedDeclaration": 1874,
                               "type": "uint256",
                               "value": "a"
                             },
                             "id": 1890,
+=======
+                              "referencedDeclaration": 1825,
+                              "type": "uint256",
+                              "value": "a"
+                            },
+                            "id": 1841,
+>>>>>>> Stashed changes
                             "name": "Identifier",
                             "src": "344:1:14"
                           },
@@ -1494,21 +2157,37 @@
                               "overloadedDeclarations": [
                                 null
                               ],
+<<<<<<< Updated upstream
                               "referencedDeclaration": 1876,
                               "type": "uint256",
                               "value": "b"
                             },
                             "id": 1891,
+=======
+                              "referencedDeclaration": 1827,
+                              "type": "uint256",
+                              "value": "b"
+                            },
+                            "id": 1842,
+>>>>>>> Stashed changes
                             "name": "Identifier",
                             "src": "348:1:14"
                           }
                         ],
+<<<<<<< Updated upstream
                         "id": 1892,
+=======
+                        "id": 1843,
+>>>>>>> Stashed changes
                         "name": "BinaryOperation",
                         "src": "344:5:14"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1893,
+=======
+                    "id": 1844,
+>>>>>>> Stashed changes
                     "name": "VariableDeclarationStatement",
                     "src": "332:17:14"
                   },
@@ -1540,11 +2219,19 @@
                               "overloadedDeclarations": [
                                 null
                               ],
+<<<<<<< Updated upstream
                               "referencedDeclaration": 1968,
                               "type": "function (bool) pure",
                               "value": "assert"
                             },
                             "id": 1894,
+=======
+                              "referencedDeclaration": 1919,
+                              "type": "function (bool) pure",
+                              "value": "assert"
+                            },
+                            "id": 1845,
+>>>>>>> Stashed changes
                             "name": "Identifier",
                             "src": "356:6:14"
                           },
@@ -1584,11 +2271,19 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
+<<<<<<< Updated upstream
                                       "referencedDeclaration": 1889,
                                       "type": "uint256",
                                       "value": "c"
                                     },
                                     "id": 1895,
+=======
+                                      "referencedDeclaration": 1840,
+                                      "type": "uint256",
+                                      "value": "c"
+                                    },
+                                    "id": 1846,
+>>>>>>> Stashed changes
                                     "name": "Identifier",
                                     "src": "363:1:14"
                                   },
@@ -1598,16 +2293,28 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
+<<<<<<< Updated upstream
                                       "referencedDeclaration": 1874,
                                       "type": "uint256",
                                       "value": "a"
                                     },
                                     "id": 1896,
+=======
+                                      "referencedDeclaration": 1825,
+                                      "type": "uint256",
+                                      "value": "a"
+                                    },
+                                    "id": 1847,
+>>>>>>> Stashed changes
                                     "name": "Identifier",
                                     "src": "367:1:14"
                                   }
                                 ],
+<<<<<<< Updated upstream
                                 "id": 1897,
+=======
+                                "id": 1848,
+>>>>>>> Stashed changes
                                 "name": "BinaryOperation",
                                 "src": "363:5:14"
                               },
@@ -1617,32 +2324,56 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
+<<<<<<< Updated upstream
                                   "referencedDeclaration": 1876,
                                   "type": "uint256",
                                   "value": "b"
                                 },
                                 "id": 1898,
+=======
+                                  "referencedDeclaration": 1827,
+                                  "type": "uint256",
+                                  "value": "b"
+                                },
+                                "id": 1849,
+>>>>>>> Stashed changes
                                 "name": "Identifier",
                                 "src": "372:1:14"
                               }
                             ],
+<<<<<<< Updated upstream
                             "id": 1899,
+=======
+                            "id": 1850,
+>>>>>>> Stashed changes
                             "name": "BinaryOperation",
                             "src": "363:10:14"
                           }
                         ],
+<<<<<<< Updated upstream
                         "id": 1900,
+=======
+                        "id": 1851,
+>>>>>>> Stashed changes
                         "name": "FunctionCall",
                         "src": "356:18:14"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1901,
+=======
+                    "id": 1852,
+>>>>>>> Stashed changes
                     "name": "ExpressionStatement",
                     "src": "356:18:14"
                   },
                   {
                     "attributes": {
+<<<<<<< Updated upstream
                       "functionReturnParameters": 1880
+=======
+                      "functionReturnParameters": 1831
+>>>>>>> Stashed changes
                     },
                     "children": [
                       {
@@ -1651,26 +2382,46 @@
                           "overloadedDeclarations": [
                             null
                           ],
+<<<<<<< Updated upstream
                           "referencedDeclaration": 1889,
                           "type": "uint256",
                           "value": "c"
                         },
                         "id": 1902,
+=======
+                          "referencedDeclaration": 1840,
+                          "type": "uint256",
+                          "value": "c"
+                        },
+                        "id": 1853,
+>>>>>>> Stashed changes
                         "name": "Identifier",
                         "src": "388:1:14"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1903,
+=======
+                    "id": 1854,
+>>>>>>> Stashed changes
                     "name": "Return",
                     "src": "381:8:14"
                   }
                 ],
+<<<<<<< Updated upstream
                 "id": 1904,
+=======
+                "id": 1855,
+>>>>>>> Stashed changes
                 "name": "Block",
                 "src": "282:113:14"
               }
             ],
+<<<<<<< Updated upstream
             "id": 1905,
+=======
+            "id": 1856,
+>>>>>>> Stashed changes
             "name": "FunctionDefinition",
             "src": "215:180:14"
           },
@@ -1684,7 +2435,11 @@
                 null
               ],
               "name": "div",
+<<<<<<< Updated upstream
               "scope": 1964,
+=======
+              "scope": 1915,
+>>>>>>> Stashed changes
               "stateMutability": "pure",
               "superFunction": null,
               "visibility": "internal"
@@ -1696,7 +2451,11 @@
                     "attributes": {
                       "constant": false,
                       "name": "a",
+<<<<<<< Updated upstream
                       "scope": 1919,
+=======
+                      "scope": 1870,
+>>>>>>> Stashed changes
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -1709,12 +2468,20 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
+<<<<<<< Updated upstream
                         "id": 1906,
+=======
+                        "id": 1857,
+>>>>>>> Stashed changes
                         "name": "ElementaryTypeName",
                         "src": "495:7:14"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1907,
+=======
+                    "id": 1858,
+>>>>>>> Stashed changes
                     "name": "VariableDeclaration",
                     "src": "495:9:14"
                   },
@@ -1722,7 +2489,11 @@
                     "attributes": {
                       "constant": false,
                       "name": "b",
+<<<<<<< Updated upstream
                       "scope": 1919,
+=======
+                      "scope": 1870,
+>>>>>>> Stashed changes
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -1735,17 +2506,29 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
+<<<<<<< Updated upstream
                         "id": 1908,
+=======
+                        "id": 1859,
+>>>>>>> Stashed changes
                         "name": "ElementaryTypeName",
                         "src": "506:7:14"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1909,
+=======
+                    "id": 1860,
+>>>>>>> Stashed changes
                     "name": "VariableDeclaration",
                     "src": "506:9:14"
                   }
                 ],
+<<<<<<< Updated upstream
                 "id": 1910,
+=======
+                "id": 1861,
+>>>>>>> Stashed changes
                 "name": "ParameterList",
                 "src": "494:22:14"
               },
@@ -1755,7 +2538,11 @@
                     "attributes": {
                       "constant": false,
                       "name": "",
+<<<<<<< Updated upstream
                       "scope": 1919,
+=======
+                      "scope": 1870,
+>>>>>>> Stashed changes
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -1768,17 +2555,29 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
+<<<<<<< Updated upstream
                         "id": 1911,
+=======
+                        "id": 1862,
+>>>>>>> Stashed changes
                         "name": "ElementaryTypeName",
                         "src": "540:7:14"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1912,
+=======
+                    "id": 1863,
+>>>>>>> Stashed changes
                     "name": "VariableDeclaration",
                     "src": "540:7:14"
                   }
                 ],
+<<<<<<< Updated upstream
                 "id": 1913,
+=======
+                "id": 1864,
+>>>>>>> Stashed changes
                 "name": "ParameterList",
                 "src": "539:9:14"
               },
@@ -1786,7 +2585,11 @@
                 "children": [
                   {
                     "attributes": {
+<<<<<<< Updated upstream
                       "functionReturnParameters": 1913
+=======
+                      "functionReturnParameters": 1864
+>>>>>>> Stashed changes
                     },
                     "children": [
                       {
@@ -1810,11 +2613,19 @@
                               "overloadedDeclarations": [
                                 null
                               ],
+<<<<<<< Updated upstream
                               "referencedDeclaration": 1907,
                               "type": "uint256",
                               "value": "a"
                             },
                             "id": 1914,
+=======
+                              "referencedDeclaration": 1858,
+                              "type": "uint256",
+                              "value": "a"
+                            },
+                            "id": 1865,
+>>>>>>> Stashed changes
                             "name": "Identifier",
                             "src": "748:1:14"
                           },
@@ -1824,31 +2635,55 @@
                               "overloadedDeclarations": [
                                 null
                               ],
+<<<<<<< Updated upstream
                               "referencedDeclaration": 1909,
                               "type": "uint256",
                               "value": "b"
                             },
                             "id": 1915,
+=======
+                              "referencedDeclaration": 1860,
+                              "type": "uint256",
+                              "value": "b"
+                            },
+                            "id": 1866,
+>>>>>>> Stashed changes
                             "name": "Identifier",
                             "src": "752:1:14"
                           }
                         ],
+<<<<<<< Updated upstream
                         "id": 1916,
+=======
+                        "id": 1867,
+>>>>>>> Stashed changes
                         "name": "BinaryOperation",
                         "src": "748:5:14"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1917,
+=======
+                    "id": 1868,
+>>>>>>> Stashed changes
                     "name": "Return",
                     "src": "741:12:14"
                   }
                 ],
+<<<<<<< Updated upstream
                 "id": 1918,
+=======
+                "id": 1869,
+>>>>>>> Stashed changes
                 "name": "Block",
                 "src": "549:210:14"
               }
             ],
+<<<<<<< Updated upstream
             "id": 1919,
+=======
+            "id": 1870,
+>>>>>>> Stashed changes
             "name": "FunctionDefinition",
             "src": "482:277:14"
           },
@@ -1862,7 +2697,11 @@
                 null
               ],
               "name": "sub",
+<<<<<<< Updated upstream
               "scope": 1964,
+=======
+              "scope": 1915,
+>>>>>>> Stashed changes
               "stateMutability": "pure",
               "superFunction": null,
               "visibility": "internal"
@@ -1874,7 +2713,11 @@
                     "attributes": {
                       "constant": false,
                       "name": "a",
+<<<<<<< Updated upstream
                       "scope": 1939,
+=======
+                      "scope": 1890,
+>>>>>>> Stashed changes
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -1887,12 +2730,20 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
+<<<<<<< Updated upstream
                         "id": 1920,
+=======
+                        "id": 1871,
+>>>>>>> Stashed changes
                         "name": "ElementaryTypeName",
                         "src": "889:7:14"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1921,
+=======
+                    "id": 1872,
+>>>>>>> Stashed changes
                     "name": "VariableDeclaration",
                     "src": "889:9:14"
                   },
@@ -1900,7 +2751,11 @@
                     "attributes": {
                       "constant": false,
                       "name": "b",
+<<<<<<< Updated upstream
                       "scope": 1939,
+=======
+                      "scope": 1890,
+>>>>>>> Stashed changes
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -1913,17 +2768,29 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
+<<<<<<< Updated upstream
                         "id": 1922,
+=======
+                        "id": 1873,
+>>>>>>> Stashed changes
                         "name": "ElementaryTypeName",
                         "src": "900:7:14"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1923,
+=======
+                    "id": 1874,
+>>>>>>> Stashed changes
                     "name": "VariableDeclaration",
                     "src": "900:9:14"
                   }
                 ],
+<<<<<<< Updated upstream
                 "id": 1924,
+=======
+                "id": 1875,
+>>>>>>> Stashed changes
                 "name": "ParameterList",
                 "src": "888:22:14"
               },
@@ -1933,7 +2800,11 @@
                     "attributes": {
                       "constant": false,
                       "name": "",
+<<<<<<< Updated upstream
                       "scope": 1939,
+=======
+                      "scope": 1890,
+>>>>>>> Stashed changes
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -1946,17 +2817,29 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
+<<<<<<< Updated upstream
                         "id": 1925,
+=======
+                        "id": 1876,
+>>>>>>> Stashed changes
                         "name": "ElementaryTypeName",
                         "src": "934:7:14"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1926,
+=======
+                    "id": 1877,
+>>>>>>> Stashed changes
                     "name": "VariableDeclaration",
                     "src": "934:7:14"
                   }
                 ],
+<<<<<<< Updated upstream
                 "id": 1927,
+=======
+                "id": 1878,
+>>>>>>> Stashed changes
                 "name": "ParameterList",
                 "src": "933:9:14"
               },
@@ -1990,11 +2873,19 @@
                               "overloadedDeclarations": [
                                 null
                               ],
+<<<<<<< Updated upstream
                               "referencedDeclaration": 1968,
                               "type": "function (bool) pure",
                               "value": "assert"
                             },
                             "id": 1928,
+=======
+                              "referencedDeclaration": 1919,
+                              "type": "function (bool) pure",
+                              "value": "assert"
+                            },
+                            "id": 1879,
+>>>>>>> Stashed changes
                             "name": "Identifier",
                             "src": "950:6:14"
                           },
@@ -2019,11 +2910,19 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
+<<<<<<< Updated upstream
                                   "referencedDeclaration": 1923,
                                   "type": "uint256",
                                   "value": "b"
                                 },
                                 "id": 1929,
+=======
+                                  "referencedDeclaration": 1874,
+                                  "type": "uint256",
+                                  "value": "b"
+                                },
+                                "id": 1880,
+>>>>>>> Stashed changes
                                 "name": "Identifier",
                                 "src": "957:1:14"
                               },
@@ -2033,32 +2932,56 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
+<<<<<<< Updated upstream
                                   "referencedDeclaration": 1921,
                                   "type": "uint256",
                                   "value": "a"
                                 },
                                 "id": 1930,
+=======
+                                  "referencedDeclaration": 1872,
+                                  "type": "uint256",
+                                  "value": "a"
+                                },
+                                "id": 1881,
+>>>>>>> Stashed changes
                                 "name": "Identifier",
                                 "src": "962:1:14"
                               }
                             ],
+<<<<<<< Updated upstream
                             "id": 1931,
+=======
+                            "id": 1882,
+>>>>>>> Stashed changes
                             "name": "BinaryOperation",
                             "src": "957:6:14"
                           }
                         ],
+<<<<<<< Updated upstream
                         "id": 1932,
+=======
+                        "id": 1883,
+>>>>>>> Stashed changes
                         "name": "FunctionCall",
                         "src": "950:14:14"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1933,
+=======
+                    "id": 1884,
+>>>>>>> Stashed changes
                     "name": "ExpressionStatement",
                     "src": "950:14:14"
                   },
                   {
                     "attributes": {
+<<<<<<< Updated upstream
                       "functionReturnParameters": 1927
+=======
+                      "functionReturnParameters": 1878
+>>>>>>> Stashed changes
                     },
                     "children": [
                       {
@@ -2082,11 +3005,19 @@
                               "overloadedDeclarations": [
                                 null
                               ],
+<<<<<<< Updated upstream
                               "referencedDeclaration": 1921,
                               "type": "uint256",
                               "value": "a"
                             },
                             "id": 1934,
+=======
+                              "referencedDeclaration": 1872,
+                              "type": "uint256",
+                              "value": "a"
+                            },
+                            "id": 1885,
+>>>>>>> Stashed changes
                             "name": "Identifier",
                             "src": "978:1:14"
                           },
@@ -2096,31 +3027,55 @@
                               "overloadedDeclarations": [
                                 null
                               ],
+<<<<<<< Updated upstream
                               "referencedDeclaration": 1923,
                               "type": "uint256",
                               "value": "b"
                             },
                             "id": 1935,
+=======
+                              "referencedDeclaration": 1874,
+                              "type": "uint256",
+                              "value": "b"
+                            },
+                            "id": 1886,
+>>>>>>> Stashed changes
                             "name": "Identifier",
                             "src": "982:1:14"
                           }
                         ],
+<<<<<<< Updated upstream
                         "id": 1936,
+=======
+                        "id": 1887,
+>>>>>>> Stashed changes
                         "name": "BinaryOperation",
                         "src": "978:5:14"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1937,
+=======
+                    "id": 1888,
+>>>>>>> Stashed changes
                     "name": "Return",
                     "src": "971:12:14"
                   }
                 ],
+<<<<<<< Updated upstream
                 "id": 1938,
+=======
+                "id": 1889,
+>>>>>>> Stashed changes
                 "name": "Block",
                 "src": "943:46:14"
               }
             ],
+<<<<<<< Updated upstream
             "id": 1939,
+=======
+            "id": 1890,
+>>>>>>> Stashed changes
             "name": "FunctionDefinition",
             "src": "876:113:14"
           },
@@ -2134,7 +3089,11 @@
                 null
               ],
               "name": "add",
+<<<<<<< Updated upstream
               "scope": 1964,
+=======
+              "scope": 1915,
+>>>>>>> Stashed changes
               "stateMutability": "pure",
               "superFunction": null,
               "visibility": "internal"
@@ -2146,7 +3105,11 @@
                     "attributes": {
                       "constant": false,
                       "name": "a",
+<<<<<<< Updated upstream
                       "scope": 1963,
+=======
+                      "scope": 1914,
+>>>>>>> Stashed changes
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -2159,12 +3122,20 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
+<<<<<<< Updated upstream
                         "id": 1940,
+=======
+                        "id": 1891,
+>>>>>>> Stashed changes
                         "name": "ElementaryTypeName",
                         "src": "1069:7:14"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1941,
+=======
+                    "id": 1892,
+>>>>>>> Stashed changes
                     "name": "VariableDeclaration",
                     "src": "1069:9:14"
                   },
@@ -2172,7 +3143,11 @@
                     "attributes": {
                       "constant": false,
                       "name": "b",
+<<<<<<< Updated upstream
                       "scope": 1963,
+=======
+                      "scope": 1914,
+>>>>>>> Stashed changes
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -2185,17 +3160,29 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
+<<<<<<< Updated upstream
                         "id": 1942,
+=======
+                        "id": 1893,
+>>>>>>> Stashed changes
                         "name": "ElementaryTypeName",
                         "src": "1080:7:14"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1943,
+=======
+                    "id": 1894,
+>>>>>>> Stashed changes
                     "name": "VariableDeclaration",
                     "src": "1080:9:14"
                   }
                 ],
+<<<<<<< Updated upstream
                 "id": 1944,
+=======
+                "id": 1895,
+>>>>>>> Stashed changes
                 "name": "ParameterList",
                 "src": "1068:22:14"
               },
@@ -2205,7 +3192,11 @@
                     "attributes": {
                       "constant": false,
                       "name": "",
+<<<<<<< Updated upstream
                       "scope": 1963,
+=======
+                      "scope": 1914,
+>>>>>>> Stashed changes
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -2218,17 +3209,29 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
+<<<<<<< Updated upstream
                         "id": 1945,
+=======
+                        "id": 1896,
+>>>>>>> Stashed changes
                         "name": "ElementaryTypeName",
                         "src": "1114:7:14"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1946,
+=======
+                    "id": 1897,
+>>>>>>> Stashed changes
                     "name": "VariableDeclaration",
                     "src": "1114:7:14"
                   }
                 ],
+<<<<<<< Updated upstream
                 "id": 1947,
+=======
+                "id": 1898,
+>>>>>>> Stashed changes
                 "name": "ParameterList",
                 "src": "1113:9:14"
               },
@@ -2237,7 +3240,11 @@
                   {
                     "attributes": {
                       "assignments": [
+<<<<<<< Updated upstream
                         1949
+=======
+                        1900
+>>>>>>> Stashed changes
                       ]
                     },
                     "children": [
@@ -2245,7 +3252,11 @@
                         "attributes": {
                           "constant": false,
                           "name": "c",
+<<<<<<< Updated upstream
                           "scope": 1962,
+=======
+                          "scope": 1913,
+>>>>>>> Stashed changes
                           "stateVariable": false,
                           "storageLocation": "default",
                           "type": "uint256",
@@ -2258,12 +3269,20 @@
                               "name": "uint256",
                               "type": "uint256"
                             },
+<<<<<<< Updated upstream
                             "id": 1948,
+=======
+                            "id": 1899,
+>>>>>>> Stashed changes
                             "name": "ElementaryTypeName",
                             "src": "1130:7:14"
                           }
                         ],
+<<<<<<< Updated upstream
                         "id": 1949,
+=======
+                        "id": 1900,
+>>>>>>> Stashed changes
                         "name": "VariableDeclaration",
                         "src": "1130:9:14"
                       },
@@ -2288,11 +3307,19 @@
                               "overloadedDeclarations": [
                                 null
                               ],
+<<<<<<< Updated upstream
                               "referencedDeclaration": 1941,
                               "type": "uint256",
                               "value": "a"
                             },
                             "id": 1950,
+=======
+                              "referencedDeclaration": 1892,
+                              "type": "uint256",
+                              "value": "a"
+                            },
+                            "id": 1901,
+>>>>>>> Stashed changes
                             "name": "Identifier",
                             "src": "1142:1:14"
                           },
@@ -2302,21 +3329,37 @@
                               "overloadedDeclarations": [
                                 null
                               ],
+<<<<<<< Updated upstream
                               "referencedDeclaration": 1943,
                               "type": "uint256",
                               "value": "b"
                             },
                             "id": 1951,
+=======
+                              "referencedDeclaration": 1894,
+                              "type": "uint256",
+                              "value": "b"
+                            },
+                            "id": 1902,
+>>>>>>> Stashed changes
                             "name": "Identifier",
                             "src": "1146:1:14"
                           }
                         ],
+<<<<<<< Updated upstream
                         "id": 1952,
+=======
+                        "id": 1903,
+>>>>>>> Stashed changes
                         "name": "BinaryOperation",
                         "src": "1142:5:14"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1953,
+=======
+                    "id": 1904,
+>>>>>>> Stashed changes
                     "name": "VariableDeclarationStatement",
                     "src": "1130:17:14"
                   },
@@ -2348,11 +3391,19 @@
                               "overloadedDeclarations": [
                                 null
                               ],
+<<<<<<< Updated upstream
                               "referencedDeclaration": 1968,
                               "type": "function (bool) pure",
                               "value": "assert"
                             },
                             "id": 1954,
+=======
+                              "referencedDeclaration": 1919,
+                              "type": "function (bool) pure",
+                              "value": "assert"
+                            },
+                            "id": 1905,
+>>>>>>> Stashed changes
                             "name": "Identifier",
                             "src": "1154:6:14"
                           },
@@ -2377,11 +3428,19 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
+<<<<<<< Updated upstream
                                   "referencedDeclaration": 1949,
                                   "type": "uint256",
                                   "value": "c"
                                 },
                                 "id": 1955,
+=======
+                                  "referencedDeclaration": 1900,
+                                  "type": "uint256",
+                                  "value": "c"
+                                },
+                                "id": 1906,
+>>>>>>> Stashed changes
                                 "name": "Identifier",
                                 "src": "1161:1:14"
                               },
@@ -2391,32 +3450,56 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
+<<<<<<< Updated upstream
                                   "referencedDeclaration": 1941,
                                   "type": "uint256",
                                   "value": "a"
                                 },
                                 "id": 1956,
+=======
+                                  "referencedDeclaration": 1892,
+                                  "type": "uint256",
+                                  "value": "a"
+                                },
+                                "id": 1907,
+>>>>>>> Stashed changes
                                 "name": "Identifier",
                                 "src": "1166:1:14"
                               }
                             ],
+<<<<<<< Updated upstream
                             "id": 1957,
+=======
+                            "id": 1908,
+>>>>>>> Stashed changes
                             "name": "BinaryOperation",
                             "src": "1161:6:14"
                           }
                         ],
+<<<<<<< Updated upstream
                         "id": 1958,
+=======
+                        "id": 1909,
+>>>>>>> Stashed changes
                         "name": "FunctionCall",
                         "src": "1154:14:14"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1959,
+=======
+                    "id": 1910,
+>>>>>>> Stashed changes
                     "name": "ExpressionStatement",
                     "src": "1154:14:14"
                   },
                   {
                     "attributes": {
+<<<<<<< Updated upstream
                       "functionReturnParameters": 1947
+=======
+                      "functionReturnParameters": 1898
+>>>>>>> Stashed changes
                     },
                     "children": [
                       {
@@ -2425,36 +3508,64 @@
                           "overloadedDeclarations": [
                             null
                           ],
+<<<<<<< Updated upstream
                           "referencedDeclaration": 1949,
                           "type": "uint256",
                           "value": "c"
                         },
                         "id": 1960,
+=======
+                          "referencedDeclaration": 1900,
+                          "type": "uint256",
+                          "value": "c"
+                        },
+                        "id": 1911,
+>>>>>>> Stashed changes
                         "name": "Identifier",
                         "src": "1182:1:14"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1961,
+=======
+                    "id": 1912,
+>>>>>>> Stashed changes
                     "name": "Return",
                     "src": "1175:8:14"
                   }
                 ],
+<<<<<<< Updated upstream
                 "id": 1962,
+=======
+                "id": 1913,
+>>>>>>> Stashed changes
                 "name": "Block",
                 "src": "1123:66:14"
               }
             ],
+<<<<<<< Updated upstream
             "id": 1963,
+=======
+            "id": 1914,
+>>>>>>> Stashed changes
             "name": "FunctionDefinition",
             "src": "1056:133:14"
           }
         ],
+<<<<<<< Updated upstream
         "id": 1964,
+=======
+        "id": 1915,
+>>>>>>> Stashed changes
         "name": "ContractDefinition",
         "src": "124:1068:14"
       }
     ],
+<<<<<<< Updated upstream
     "id": 1965,
+=======
+    "id": 1916,
+>>>>>>> Stashed changes
     "name": "SourceUnit",
     "src": "0:1192:14"
   },
@@ -2464,7 +3575,11 @@
   },
   "networks": {},
   "schemaVersion": "3.3.3",
+<<<<<<< Updated upstream
   "updatedAt": "2021-08-14T19:15:29.626Z",
+=======
+  "updatedAt": "2021-08-14T17:28:46.039Z",
+>>>>>>> Stashed changes
   "devdoc": {
     "details": "Math operations with safety checks that throw on error",
     "methods": {},

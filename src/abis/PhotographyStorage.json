@@ -69,6 +69,7 @@
     "absolutePath": "/D/B.E/VII sem/Project/Footprints/src/contracts/PhotographyStorage.sol",
     "exportedSymbols": {
       "PhotographyStorage": [
+<<<<<<< Updated upstream
         1870
       ]
     },
@@ -77,6 +78,16 @@
     "nodes": [
       {
         "id": 1852,
+=======
+        1821
+      ]
+    },
+    "id": 1822,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1803,
+>>>>>>> Stashed changes
         "literals": [
           "solidity",
           "^",
@@ -92,15 +103,22 @@
         "contractKind": "contract",
         "documentation": "@title Interface for contracts conforming to ERC-721",
         "fullyImplemented": true,
+<<<<<<< Updated upstream
         "id": 1870,
         "linearizedBaseContracts": [
           1870
+=======
+        "id": 1821,
+        "linearizedBaseContracts": [
+          1821
+>>>>>>> Stashed changes
         ],
         "name": "PhotographyStorage",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "PhotographyStorage.Photo",
+<<<<<<< Updated upstream
             "id": 1861,
             "members": [
               {
@@ -109,6 +127,16 @@
                 "name": "id",
                 "nodeType": "VariableDeclaration",
                 "scope": 1861,
+=======
+            "id": 1812,
+            "members": [
+              {
+                "constant": false,
+                "id": 1805,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 1812,
+>>>>>>> Stashed changes
                 "src": "166:10:13",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -117,7 +145,11 @@
                   "typeString": "bytes32"
                 },
                 "typeName": {
+<<<<<<< Updated upstream
                   "id": 1853,
+=======
+                  "id": 1804,
+>>>>>>> Stashed changes
                   "name": "bytes32",
                   "nodeType": "ElementaryTypeName",
                   "src": "166:7:13",
@@ -131,10 +163,17 @@
               },
               {
                 "constant": false,
+<<<<<<< Updated upstream
                 "id": 1856,
                 "name": "owner",
                 "nodeType": "VariableDeclaration",
                 "scope": 1861,
+=======
+                "id": 1807,
+                "name": "owner",
+                "nodeType": "VariableDeclaration",
+                "scope": 1812,
+>>>>>>> Stashed changes
                 "src": "187:21:13",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -143,7 +182,11 @@
                   "typeString": "address payable"
                 },
                 "typeName": {
+<<<<<<< Updated upstream
                   "id": 1855,
+=======
+                  "id": 1806,
+>>>>>>> Stashed changes
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "187:15:13",
@@ -158,10 +201,17 @@
               },
               {
                 "constant": false,
+<<<<<<< Updated upstream
                 "id": 1858,
                 "name": "nftAddress",
                 "nodeType": "VariableDeclaration",
                 "scope": 1861,
+=======
+                "id": 1809,
+                "name": "nftAddress",
+                "nodeType": "VariableDeclaration",
+                "scope": 1812,
+>>>>>>> Stashed changes
                 "src": "219:18:13",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -170,7 +220,11 @@
                   "typeString": "address"
                 },
                 "typeName": {
+<<<<<<< Updated upstream
                   "id": 1857,
+=======
+                  "id": 1808,
+>>>>>>> Stashed changes
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "219:7:13",
@@ -185,10 +239,17 @@
               },
               {
                 "constant": false,
+<<<<<<< Updated upstream
                 "id": 1860,
                 "name": "price",
                 "nodeType": "VariableDeclaration",
                 "scope": 1861,
+=======
+                "id": 1811,
+                "name": "price",
+                "nodeType": "VariableDeclaration",
+                "scope": 1812,
+>>>>>>> Stashed changes
                 "src": "248:13:13",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -197,7 +258,11 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
+<<<<<<< Updated upstream
                   "id": 1859,
+=======
+                  "id": 1810,
+>>>>>>> Stashed changes
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "248:7:13",
@@ -212,16 +277,27 @@
             ],
             "name": "Photo",
             "nodeType": "StructDefinition",
+<<<<<<< Updated upstream
             "scope": 1870,
+=======
+            "scope": 1821,
+>>>>>>> Stashed changes
             "src": "142:127:13",
             "visibility": "public"
           },
           {
             "constant": false,
+<<<<<<< Updated upstream
             "id": 1863,
             "name": "nftCounter",
             "nodeType": "VariableDeclaration",
             "scope": 1870,
+=======
+            "id": 1814,
+            "name": "nftCounter",
+            "nodeType": "VariableDeclaration",
+            "scope": 1821,
+>>>>>>> Stashed changes
             "src": "279:25:13",
             "stateVariable": true,
             "storageLocation": "default",
@@ -230,7 +306,11 @@
               "typeString": "uint256"
             },
             "typeName": {
+<<<<<<< Updated upstream
               "id": 1862,
+=======
+              "id": 1813,
+>>>>>>> Stashed changes
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "279:7:13",
@@ -244,14 +324,22 @@
           },
           {
             "constant": false,
+<<<<<<< Updated upstream
             "id": 1869,
             "name": "photoByAssetId",
             "nodeType": "VariableDeclaration",
             "scope": 1870,
+=======
+            "id": 1820,
+            "name": "photoByAssetId",
+            "nodeType": "VariableDeclaration",
+            "scope": 1821,
+>>>>>>> Stashed changes
             "src": "383:68:13",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
+<<<<<<< Updated upstream
               "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_uint256_$_t_struct$_Photo_$1861_storage_$_$",
               "typeString": "mapping(address => mapping(uint256 => struct PhotographyStorage.Photo))"
             },
@@ -259,6 +347,15 @@
               "id": 1868,
               "keyType": {
                 "id": 1864,
+=======
+              "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_uint256_$_t_struct$_Photo_$1812_storage_$_$",
+              "typeString": "mapping(address => mapping(uint256 => struct PhotographyStorage.Photo))"
+            },
+            "typeName": {
+              "id": 1819,
+              "keyType": {
+                "id": 1815,
+>>>>>>> Stashed changes
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "392:7:13",
@@ -270,6 +367,7 @@
               "nodeType": "Mapping",
               "src": "383:46:13",
               "typeDescriptions": {
+<<<<<<< Updated upstream
                 "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_uint256_$_t_struct$_Photo_$1861_storage_$_$",
                 "typeString": "mapping(address => mapping(uint256 => struct PhotographyStorage.Photo))"
               },
@@ -277,6 +375,15 @@
                 "id": 1867,
                 "keyType": {
                   "id": 1865,
+=======
+                "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_uint256_$_t_struct$_Photo_$1812_storage_$_$",
+                "typeString": "mapping(address => mapping(uint256 => struct PhotographyStorage.Photo))"
+              },
+              "valueType": {
+                "id": 1818,
+                "keyType": {
+                  "id": 1816,
+>>>>>>> Stashed changes
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "411:7:13",
@@ -288,11 +395,16 @@
                 "nodeType": "Mapping",
                 "src": "403:25:13",
                 "typeDescriptions": {
+<<<<<<< Updated upstream
                   "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Photo_$1861_storage_$",
+=======
+                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Photo_$1812_storage_$",
+>>>>>>> Stashed changes
                   "typeString": "mapping(uint256 => struct PhotographyStorage.Photo)"
                 },
                 "valueType": {
                   "contractScope": null,
+<<<<<<< Updated upstream
                   "id": 1866,
                   "name": "Photo",
                   "nodeType": "UserDefinedTypeName",
@@ -300,6 +412,15 @@
                   "src": "422:5:13",
                   "typeDescriptions": {
                     "typeIdentifier": "t_struct$_Photo_$1861_storage_ptr",
+=======
+                  "id": 1817,
+                  "name": "Photo",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 1812,
+                  "src": "422:5:13",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Photo_$1812_storage_ptr",
+>>>>>>> Stashed changes
                     "typeString": "struct PhotographyStorage.Photo"
                   }
                 }
@@ -309,7 +430,11 @@
             "visibility": "public"
           }
         ],
+<<<<<<< Updated upstream
         "scope": 1871,
+=======
+        "scope": 1822,
+>>>>>>> Stashed changes
         "src": "99:360:13"
       }
     ],
@@ -320,7 +445,11 @@
       "absolutePath": "/D/B.E/VII sem/Project/Footprints/src/contracts/PhotographyStorage.sol",
       "exportedSymbols": {
         "PhotographyStorage": [
+<<<<<<< Updated upstream
           1870
+=======
+          1821
+>>>>>>> Stashed changes
         ]
       }
     },
@@ -334,7 +463,11 @@
             ".16"
           ]
         },
+<<<<<<< Updated upstream
         "id": 1852,
+=======
+        "id": 1803,
+>>>>>>> Stashed changes
         "name": "PragmaDirective",
         "src": "0:24:13"
       },
@@ -350,17 +483,28 @@
           "documentation": "@title Interface for contracts conforming to ERC-721",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
+<<<<<<< Updated upstream
             1870
           ],
           "name": "PhotographyStorage",
           "scope": 1871
+=======
+            1821
+          ],
+          "name": "PhotographyStorage",
+          "scope": 1822
+>>>>>>> Stashed changes
         },
         "children": [
           {
             "attributes": {
               "canonicalName": "PhotographyStorage.Photo",
               "name": "Photo",
+<<<<<<< Updated upstream
               "scope": 1870,
+=======
+              "scope": 1821,
+>>>>>>> Stashed changes
               "visibility": "public"
             },
             "children": [
@@ -368,7 +512,11 @@
                 "attributes": {
                   "constant": false,
                   "name": "id",
+<<<<<<< Updated upstream
                   "scope": 1861,
+=======
+                  "scope": 1812,
+>>>>>>> Stashed changes
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "bytes32",
@@ -381,12 +529,20 @@
                       "name": "bytes32",
                       "type": "bytes32"
                     },
+<<<<<<< Updated upstream
                     "id": 1853,
+=======
+                    "id": 1804,
+>>>>>>> Stashed changes
                     "name": "ElementaryTypeName",
                     "src": "166:7:13"
                   }
                 ],
+<<<<<<< Updated upstream
                 "id": 1854,
+=======
+                "id": 1805,
+>>>>>>> Stashed changes
                 "name": "VariableDeclaration",
                 "src": "166:10:13"
               },
@@ -394,7 +550,11 @@
                 "attributes": {
                   "constant": false,
                   "name": "owner",
+<<<<<<< Updated upstream
                   "scope": 1861,
+=======
+                  "scope": 1812,
+>>>>>>> Stashed changes
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "address payable",
@@ -408,12 +568,20 @@
                       "stateMutability": "payable",
                       "type": "address payable"
                     },
+<<<<<<< Updated upstream
                     "id": 1855,
+=======
+                    "id": 1806,
+>>>>>>> Stashed changes
                     "name": "ElementaryTypeName",
                     "src": "187:15:13"
                   }
                 ],
+<<<<<<< Updated upstream
                 "id": 1856,
+=======
+                "id": 1807,
+>>>>>>> Stashed changes
                 "name": "VariableDeclaration",
                 "src": "187:21:13"
               },
@@ -421,7 +589,11 @@
                 "attributes": {
                   "constant": false,
                   "name": "nftAddress",
+<<<<<<< Updated upstream
                   "scope": 1861,
+=======
+                  "scope": 1812,
+>>>>>>> Stashed changes
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "address",
@@ -435,12 +607,20 @@
                       "stateMutability": "nonpayable",
                       "type": "address"
                     },
+<<<<<<< Updated upstream
                     "id": 1857,
+=======
+                    "id": 1808,
+>>>>>>> Stashed changes
                     "name": "ElementaryTypeName",
                     "src": "219:7:13"
                   }
                 ],
+<<<<<<< Updated upstream
                 "id": 1858,
+=======
+                "id": 1809,
+>>>>>>> Stashed changes
                 "name": "VariableDeclaration",
                 "src": "219:18:13"
               },
@@ -448,7 +628,11 @@
                 "attributes": {
                   "constant": false,
                   "name": "price",
+<<<<<<< Updated upstream
                   "scope": 1861,
+=======
+                  "scope": 1812,
+>>>>>>> Stashed changes
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "uint256",
@@ -461,17 +645,29 @@
                       "name": "uint256",
                       "type": "uint256"
                     },
+<<<<<<< Updated upstream
                     "id": 1859,
+=======
+                    "id": 1810,
+>>>>>>> Stashed changes
                     "name": "ElementaryTypeName",
                     "src": "248:7:13"
                   }
                 ],
+<<<<<<< Updated upstream
                 "id": 1860,
+=======
+                "id": 1811,
+>>>>>>> Stashed changes
                 "name": "VariableDeclaration",
                 "src": "248:13:13"
               }
             ],
+<<<<<<< Updated upstream
             "id": 1861,
+=======
+            "id": 1812,
+>>>>>>> Stashed changes
             "name": "StructDefinition",
             "src": "142:127:13"
           },
@@ -479,7 +675,11 @@
             "attributes": {
               "constant": false,
               "name": "nftCounter",
+<<<<<<< Updated upstream
               "scope": 1870,
+=======
+              "scope": 1821,
+>>>>>>> Stashed changes
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256",
@@ -492,12 +692,20 @@
                   "name": "uint256",
                   "type": "uint256"
                 },
+<<<<<<< Updated upstream
                 "id": 1862,
+=======
+                "id": 1813,
+>>>>>>> Stashed changes
                 "name": "ElementaryTypeName",
                 "src": "279:7:13"
               }
             ],
+<<<<<<< Updated upstream
             "id": 1863,
+=======
+            "id": 1814,
+>>>>>>> Stashed changes
             "name": "VariableDeclaration",
             "src": "279:25:13"
           },
@@ -505,7 +713,11 @@
             "attributes": {
               "constant": false,
               "name": "photoByAssetId",
+<<<<<<< Updated upstream
               "scope": 1870,
+=======
+              "scope": 1821,
+>>>>>>> Stashed changes
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(address => mapping(uint256 => struct PhotographyStorage.Photo))",
@@ -523,7 +735,11 @@
                       "name": "address",
                       "type": "address"
                     },
+<<<<<<< Updated upstream
                     "id": 1864,
+=======
+                    "id": 1815,
+>>>>>>> Stashed changes
                     "name": "ElementaryTypeName",
                     "src": "392:7:13"
                   },
@@ -537,7 +753,11 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
+<<<<<<< Updated upstream
                         "id": 1865,
+=======
+                        "id": 1816,
+>>>>>>> Stashed changes
                         "name": "ElementaryTypeName",
                         "src": "411:7:13"
                       },
@@ -545,35 +765,62 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "Photo",
+<<<<<<< Updated upstream
                           "referencedDeclaration": 1861,
                           "type": "struct PhotographyStorage.Photo"
                         },
                         "id": 1866,
+=======
+                          "referencedDeclaration": 1812,
+                          "type": "struct PhotographyStorage.Photo"
+                        },
+                        "id": 1817,
+>>>>>>> Stashed changes
                         "name": "UserDefinedTypeName",
                         "src": "422:5:13"
                       }
                     ],
+<<<<<<< Updated upstream
                     "id": 1867,
+=======
+                    "id": 1818,
+>>>>>>> Stashed changes
                     "name": "Mapping",
                     "src": "403:25:13"
                   }
                 ],
+<<<<<<< Updated upstream
                 "id": 1868,
+=======
+                "id": 1819,
+>>>>>>> Stashed changes
                 "name": "Mapping",
                 "src": "383:46:13"
               }
             ],
+<<<<<<< Updated upstream
             "id": 1869,
+=======
+            "id": 1820,
+>>>>>>> Stashed changes
             "name": "VariableDeclaration",
             "src": "383:68:13"
           }
         ],
+<<<<<<< Updated upstream
         "id": 1870,
+=======
+        "id": 1821,
+>>>>>>> Stashed changes
         "name": "ContractDefinition",
         "src": "99:360:13"
       }
     ],
+<<<<<<< Updated upstream
     "id": 1871,
+=======
+    "id": 1822,
+>>>>>>> Stashed changes
     "name": "SourceUnit",
     "src": "0:459:13"
   },
@@ -583,7 +830,11 @@
   },
   "networks": {},
   "schemaVersion": "3.3.3",
+<<<<<<< Updated upstream
   "updatedAt": "2021-08-14T19:15:29.623Z",
+=======
+  "updatedAt": "2021-08-14T17:28:46.036Z",
+>>>>>>> Stashed changes
   "devdoc": {
     "methods": {},
     "title": "Interface for contracts conforming to ERC-721"

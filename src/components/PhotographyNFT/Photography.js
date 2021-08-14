@@ -5,6 +5,9 @@ import IconButton from '@material-ui/core/IconButton';
 import BeachAccessIcon from '@material-ui/icons/BeachAccess';
 import BeenhereIcon from '@material-ui/icons/Beenhere';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Row, Col, Container} from 'react-bootstrap';
+import styles from './Photo.module.css'
 
 const style = {
     content: {
@@ -139,6 +142,92 @@ class Photography extends Component {
                                         if ((this.state.cr_latitude <= (feedPost[0][4])+2 && this.state.cr_latitude > (feedPost[0][4])-2) && this.state.cr_longitude <= (feedPost[0][5])+2 >  this.state.cr_longitude <= (feedPost[0][5])-2){
 
                                             return (
+                                                <Container fluid className={styles.body1}>
+                                                <Row className={styles.holder}>
+                                                    <Col md={5}>
+                                                        <Row className={styles.imagebox}>
+                                                            <img src={feedPost[0][3]} className={styles.forimg}/>
+                                                        </Row>
+                                                    </Col>
+                                                    <Col md={7} className={styles.textCol}>
+                                                        <IconButton>
+                                                            <AccountCircleIcon className={styles.foricon}/>
+                                                        </IconButton>
+                                                        <h6 className={styles.textpart}>
+                                                            {feedPost[0][6]} 
+                                                        </h6>
+                                                        <p className={styles.heading}>
+                                                        {feedPost[0][1]}  
+                                                        </p>
+                                                        <p className={styles.text}>
+                                                        {feedPost[0][2]}
+                                                        </p>
+                                                    </Col>
+                                                </Row>
+                                            </Container>
+
+                                                // <Container fluid className={styles.body2}>
+                                                //     <Row className={styles.holder}>
+                                                //         <Col md={5}>
+                                                //             <Row className={styles.imagebox}>
+                                                //                 <img src={feedPost[0][3]} className={styles.forimg}/>
+                                                //             </Row>
+                                                //         </Col>
+                                                //         <Col md={7} className={styles.textCol}>
+                                                //             <IconButton>
+                                                //                 <AccountCircleIcon className={styles.foricon}/>
+                                                //             </IconButton>
+                                                //             <h6 className={styles.textpart}>
+                                                //                 {feedPost[0][6]} 
+                                                //             </h6>
+                                                //             <p className={styles.heading}>
+                                                //             {feedPost[0][1]}  
+                                                //             </p>
+                                                //             <p className={styles.text}>
+                                                //             {feedPost[0][2]}
+                                                //             </p>
+                                                //         </Col>
+                                                //     </Row>
+                                                // </Container>
+
+
+                                                // <Container fluid className={styles.body2}>
+                                                //         <Row className={styles.holder}>
+                                                //             <Col md={5} className={styles.smallhide}>
+                                                //                 <Row className={styles.imagebox}>
+                                                //                     {/* <img src={feedPost[0][3]} className={styles.image}/>
+                                                //                     <p className={styles.foracc}>
+                                                //                         {this.state.feedPosts[0][0][6]}
+                                                //                     </p> */}
+                                                //                     <IconButton>
+                                                //                 <BeenhereIcon style={{ color: "black" }} />
+                                                //             </IconButton>
+                                                //             {feedPost[0][1]}
+
+                                                //             {feedPost[0][6]}
+                                                //                 <IconButton>
+                                                //                     <AccountCircleIcon style={{ color: "black" }} />
+                                                //                 </IconButton>
+                                                //                 </Row>
+                                                                
+                                                //             </Col>
+                                                           
+                                                //              <Col md={7} className={styles.textCol}>
+                                                //                 <p className={styles.heading}>
+                                                //                 {this.state.feedPosts[0][0][1]}
+                                                //                 </p>
+                                                                
+                                                //                 <p className={styles.text}>
+                                                //                 {this.state.feedPosts[0][0][2]}
+                                                //                 </p>
+
+                                                //             </Col>
+                                                //         </Row>
+                                                //     </Container>
+
+
+
+                                                /*
                                                 <div className="card mb-4">
 
                                                     <div className="card-header">
@@ -170,7 +259,6 @@ class Photography extends Component {
                                                     >
                                                         <li className="list-group-item" >
                                                             <p className="text-center">
-                                                                {/* {feedPost[0][4]},{feedPost[0][5]} */}
                                                                 {console.log(this.state.cr_latitude, this.state.cr_longitude)}
 
                                                                 <img
@@ -186,6 +274,7 @@ class Photography extends Component {
 
                                                     </ul>
                                                 </div>
+                                                */
                                             );
                                         }
                                     })}

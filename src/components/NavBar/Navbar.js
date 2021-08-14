@@ -10,7 +10,7 @@ function Navigation(props) {
       <div style={{ opacity: 0 }} ></div>
       <nav class="py-1 navbar navbar-expand-sm" >
         <div class="container">
-          <img src={icon} style={{ height: 40, width: 150, marginTop: '0.5%' }} alt="Logo" />
+          <Link className="btn" to="/"> <img src={icon} style={{ height: 40, width: 150, marginTop: '0.5%' }} alt="Logo" /> </Link>
 
           <button
             class="navbar-toggler"
@@ -34,7 +34,7 @@ function Navigation(props) {
                   //variant="contained"
                   size="small"
                 >
-                  <Link class="nav-link" to="/" style={{ color: "#fd535b" }}>
+                  <Link class="nav-link" to="/upload" style={{ color: "#fd535b" }}>
                     Upload 
                     <span class="sr-only">(current)</span>
                   </Link>

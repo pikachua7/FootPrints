@@ -199,7 +199,11 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
+<<<<<<< Updated upstream
                         "referencedDeclaration": 1979,
+=======
+                        "referencedDeclaration": 1930,
+>>>>>>> Stashed changes
                         "src": "196:3:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -283,7 +287,11 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
+<<<<<<< Updated upstream
                         "referencedDeclaration": 1979,
+=======
+                        "referencedDeclaration": 1930,
+>>>>>>> Stashed changes
                         "src": "251:3:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -900,7 +908,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
+<<<<<<< Updated upstream
                                   "referencedDeclaration": 1979,
+=======
+                                  "referencedDeclaration": 1930,
+>>>>>>> Stashed changes
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -991,7 +1003,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
+<<<<<<< Updated upstream
                                   "referencedDeclaration": 1979,
+=======
+                                  "referencedDeclaration": 1930,
+>>>>>>> Stashed changes
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -1469,12 +1485,21 @@
     "5777": {
       "events": {},
       "links": {},
+<<<<<<< Updated upstream
       "address": "0xe640F29A96cdB5E2B5f54F524eCB171d41f6f2ea",
       "transactionHash": "0x06521e7d606071232f52e8f4dee2fd454b53f4a7412983134cbf372a7ca3662f"
     }
   },
   "schemaVersion": "3.3.3",
   "updatedAt": "2021-08-14T19:15:41.134Z",
+=======
+      "address": "0x752961139Bf4f312D939CB72b74c84C529e7f001",
+      "transactionHash": "0xf9ca45d8018fe8229299b784d0ec0ef12629ad0396eaebd419473cc3b23b63c5"
+    }
+  },
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-08-14T17:28:54.004Z",
+>>>>>>> Stashed changes
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
