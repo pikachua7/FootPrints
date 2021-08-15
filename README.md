@@ -1,11 +1,12 @@
 
-# TroveIT
+
+# FootPrints
 
 
 
-![c2d33a62-7ff1-4735-b0f8-dc26af476364](https://user-images.githubusercontent.com/59107121/128064295-6a24f643-3f57-4ee8-97c7-d20f3343544c.jpg)
 
-> This project was a submitted at HackMoney 2021, a global Hackathon organized by EthGlobal and won a pool prize of $3500 by Biconomy.
+
+> This project was a submitted at HackFS 2021, a global Hackathon organized by EthGlobal.
 ## Instructions to run the project locally
 
   
@@ -21,7 +22,7 @@ Install the following prerequisites
 
 ### Clone the project
 ```bash
-  git clone https://github.com/rk-rishikesh/TroveIt-HackMoney2021-Winner.git
+  git clone https://github.com/rk-rishikesh/Footprints
 ```
 ### Install node modules
 ```bash
