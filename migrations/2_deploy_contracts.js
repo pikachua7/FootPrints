@@ -2,8 +2,8 @@ const NFT = artifacts.require("NFT");
 const Marketplace = artifacts.require("Marketplace");
 const Photography = artifacts.require("Photography");
 module.exports = function(deployer) {
-  deployer.deploy(NFT,"Hello","World");
-  deployer.deploy(Marketplace);
+  // deployer.deploy(NFT,"Hello","World");
+  // deployer.deploy(Marketplace);
   deployer.deploy(Photography);
 };
 

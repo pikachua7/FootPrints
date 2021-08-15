@@ -583,7 +583,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-08-15T13:27:31.511Z",
+  "updatedAt": "2021-08-15T14:30:57.420Z",
   "devdoc": {
     "methods": {},
     "title": "Interface for contracts conforming to ERC-721"
