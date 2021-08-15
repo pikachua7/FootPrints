@@ -24,7 +24,7 @@ const style = {
   },
   imageList: {
     width: 500,
-    height: 450,
+    height: 450
   },
   icon: {
     color: 'rgba(255, 255, 255, 0.54)',
@@ -248,6 +248,7 @@ class Profile extends Component {
           width: "100%",
           height: "100%",
           backgroundRepeat: "inherit",
+          marginTop:"2%"
         }}
       >
         {this.state.loading ? (

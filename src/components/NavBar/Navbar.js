@@ -7,10 +7,10 @@ import Button from "@material-ui/core/Button";
 function Navigation(props) {
   return (
     <div className="navigation">
-      <div style={{ opacity: 0 }} ></div>
-      <nav class="py-1 navbar navbar-expand-sm" >
+      <div style={{ opacity: 0}} ></div>
+      <nav class="py-1 navbar navbar-expand-sm" style={{backgroundColor:'white' }}>
         <div class="container">
-          <Link className="btn" to="/"> <img src={icon} style={{ height: 40, width: 150, marginTop: '0.5%' }} alt="Logo" /> </Link>
+          <Link className="btn" to="/"> <img src={icon} style={{ height: 50, width: 150}} alt="Logo" /> </Link>
 
           <button
             class="navbar-toggler"

@@ -205,38 +205,40 @@ class MarketPlace extends Component {
 
                                             return (
 
-                                                <Container fluid className={styles.body1}>
-                                                <Row className={styles.holder}>
-                                                    <Col md={5}>
-                                                    
-                                                        <Row className={styles.imagebox}>
-                                                            <img src={feedPost[0][3]} className={styles.forimg}/>
-                                                        </Row>
-                                                    </Col>
-                                                    <Col md={7} className={styles.textCol}>
-                                                        
-                                                        <h6 className={styles.textpart}>
-                                                            {feedPost[0][6]} 
-                                                        </h6>
-                                                        <p className={styles.heading}>
-                                                        {feedPost[0][1]}  
-                                                        </p>
-                                                        <p className={styles.text}>
-                                                        {feedPost[0][2]}
-                                                        
-                                                        <br></br>
-                                                        <IconButton aria-label={`info about ${feedPost[0][4]}`} className={styles.foricon}
-                                                                    
+                                                <Card className={style.root} style={{ paddingBottom: '2%' }}>
+                                                    <div style={{ display: 'flex' }} >
+                                                    <IconButton aria-label={`info about ${feedPost[0][4]}`} className={styles.icon}
                                                                     onClick={(event) => {
                                                                     this.buyPhoto(feedPost[0][0], 1000);
                                                                 }}
                                                                 >
-                                                                <MonetizationOnIcon style={{ color: "black"}} className={styles.foricon} />
-                                                        </IconButton>
-                                                        </p>
-                                                    </Col>
-                                                </Row>
-                                            </Container>
+                                                                <MonetizationOnIcon style={{ color: "black",size:'20px'}} />
+                                                    </IconButton>
+                                                    <CardHeader
+                                                        title={this.state.feedPosts[0][0][6]}
+                                                        subheader={this.state.feedPosts[0][0][1]}
+                                                    />
+                                                    </div>
+                                                    <div style={{ display: 'flex', backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='250' preserveAspectRatio='none' viewBox='0 0 1440 250'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1009%26quot%3b)' fill='none'%3e%3cpath d='M8 250L258 0L384 0L134 250z' fill='url(%23SvgjsLinearGradient1010)'%3e%3c/path%3e%3cpath d='M283.6 250L533.6 0L700.1 0L450.1 250z' fill='url(%23SvgjsLinearGradient1010)'%3e%3c/path%3e%3cpath d='M499.20000000000005 250L749.2 0L864.7 0L614.7 250z' fill='url(%23SvgjsLinearGradient1010)'%3e%3c/path%3e%3cpath d='M731.8000000000001 250L981.8000000000001 0L1137.8000000000002 0L887.8000000000001 250z' fill='url(%23SvgjsLinearGradient1010)'%3e%3c/path%3e%3cpath d='M1415 250L1165 0L844 0L1094 250z' fill='url(%23SvgjsLinearGradient1011)'%3e%3c/path%3e%3cpath d='M1173.4 250L923.4000000000001 0L728.4000000000001 0L978.4000000000001 250z' fill='url(%23SvgjsLinearGradient1011)'%3e%3c/path%3e%3cpath d='M961.8 250L711.8 0L467.29999999999995 0L717.3 250z' fill='url(%23SvgjsLinearGradient1011)'%3e%3c/path%3e%3cpath d='M706.1999999999999 250L456.19999999999993 0L382.69999999999993 0L632.6999999999999 250z' fill='url(%23SvgjsLinearGradient1011)'%3e%3c/path%3e%3cpath d='M1233.9112218438227 250L1440 43.911221843822716L1440 250z' fill='url(%23SvgjsLinearGradient1010)'%3e%3c/path%3e%3cpath d='M0 250L206.08877815617728 250L 0 43.911221843822716z' fill='url(%23SvgjsLinearGradient1011)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1009'%3e%3crect width='1440' height='250' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient1010'%3e%3cstop stop-color='rgba(185%2c 99%2c 15%2c 0.2)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(185%2c 99%2c 15%2c 0.2)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1011'%3e%3cstop stop-color='rgba(185%2c 99%2c 15%2c 0.2)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(185%2c 99%2c 15%2c 0.2)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e")` }} >
+                                                        <div>
+                                                            <CardMedia className={style.media} >
+                                                                <img
+                                                                    style={{ marginLeft: '10%', maxWidth: "420px" }}
+                                                                    src={feedPost[0][3]}
+                                                                />
+                                                            </CardMedia>
+                                                        </div>
+                                                        <div style={{ marginLeft: '5%' }}>
+                                                            <CardContent>
+                                                                <Typography variant="body2" color="textSecondary" component="p">
+                                                                    {this.state.feedPosts[0][0][2]}
+                                                                </Typography>
+                                                            </CardContent>
+                                                            
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </Card>
 
                                                 // <Container fluid className={styles.body2}>
                                                 //         <Row className={styles.holder}>

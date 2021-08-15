@@ -61,22 +61,22 @@
   "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"nftCounter\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"photoByAssetId\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"id\",\"type\":\"bytes32\"},{\"internalType\":\"address payable\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"nftAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{},\"title\":\"Interface for contracts conforming to ERC-721\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/PhotographyStorage.sol\":\"PhotographyStorage\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/PhotographyStorage.sol\":{\"keccak256\":\"0x56b47100c7f3d1fb9a0a5c9340c8d7f49cc6138a300fd6c26eaa8838c826b8ba\",\"urls\":[\"bzz-raw://edbea3761e398e99620340949f81133139524ec05a597749588b0b2352e71a5e\",\"dweb:/ipfs/QmdgfGh3Zii4cSvNy4CNg2LWPknSA61CZHqWmvSduY6KPP\"]}},\"version\":1}",
   "bytecode": "0x608060405234801561001057600080fd5b506101e0806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063ca98c1351461003b578063e574609e1461010a575b600080fd5b6100876004803603604081101561005157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610128565b604051808581526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200194505050505060405180910390f35b6101126101a5565b6040518082815260200191505060405180910390f35b6001602052816000526040600020602052806000526040600020600091509150508060000154908060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060020160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060030154905084565b6000548156fea265627a7a72315820aaf352c75fca8467093e12eac469cef7cf790c34bd7791041258a533e127336e64736f6c63430005110032",
   "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063ca98c1351461003b578063e574609e1461010a575b600080fd5b6100876004803603604081101561005157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610128565b604051808581526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200194505050505060405180910390f35b6101126101a5565b6040518082815260200191505060405180910390f35b6001602052816000526040600020602052806000526040600020600091509150508060000154908060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060020160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060030154905084565b6000548156fea265627a7a72315820aaf352c75fca8467093e12eac469cef7cf790c34bd7791041258a533e127336e64736f6c63430005110032",
-  "sourceMap": "99:360:13:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;99:360:13;;;;;;;",
-  "deployedSourceMap": "99:360:13:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;99:360:13;;;;;;;;;;;;;;;;;;;;;;;;383:68;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;383:68:13;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;279:25;;;:::i;:::-;;;;;;;;;;;;;;;;;;;383:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;279:25::-;;;;:::o",
+  "sourceMap": "99:360:8:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;99:360:8;;;;;;;",
+  "deployedSourceMap": "99:360:8:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;99:360:8;;;;;;;;;;;;;;;;;;;;;;;;383:68;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;383:68:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;279:25;;;:::i;:::-;;;;;;;;;;;;;;;;;;;383:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;279:25::-;;;;:::o",
   "source": "pragma solidity ^0.5.16;\r\n\r\n/**\r\n * @title Interface for contracts conforming to ERC-721\r\n */\r\n\r\n\r\ncontract PhotographyStorage {\r\n\r\n    \r\n    struct Photo {\r\n        bytes32 id;\r\n        address payable owner;\r\n        address nftAddress;\r\n        uint256 price;\r\n    }\r\n    \r\n  uint256 public nftCounter;\r\n    \r\n  // From NFT registry assetId to Photo (to avoid asset collision)\r\n  mapping (address => mapping(uint256 => Photo)) public photoByAssetId;\r\n  \r\n}",
-  "sourcePath": "C:\\Users\\yashr\\Documents\\Important\\Projects\\Footprints\\src\\contracts\\PhotographyStorage.sol",
+  "sourcePath": "C:/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/PhotographyStorage.sol",
   "ast": {
     "absolutePath": "/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/PhotographyStorage.sol",
     "exportedSymbols": {
       "PhotographyStorage": [
-        1870
+        1346
       ]
     },
-    "id": 1871,
+    "id": 1347,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1852,
+        "id": 1328,
         "literals": [
           "solidity",
           "^",
@@ -84,7 +84,7 @@
           ".16"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:13"
+        "src": "0:24:8"
       },
       {
         "baseContracts": [],
@@ -92,24 +92,24 @@
         "contractKind": "contract",
         "documentation": "@title Interface for contracts conforming to ERC-721",
         "fullyImplemented": true,
-        "id": 1870,
+        "id": 1346,
         "linearizedBaseContracts": [
-          1870
+          1346
         ],
         "name": "PhotographyStorage",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "PhotographyStorage.Photo",
-            "id": 1861,
+            "id": 1337,
             "members": [
               {
                 "constant": false,
-                "id": 1854,
+                "id": 1330,
                 "name": "id",
                 "nodeType": "VariableDeclaration",
-                "scope": 1861,
-                "src": "166:10:13",
+                "scope": 1337,
+                "src": "166:10:8",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -117,10 +117,10 @@
                   "typeString": "bytes32"
                 },
                 "typeName": {
-                  "id": 1853,
+                  "id": 1329,
                   "name": "bytes32",
                   "nodeType": "ElementaryTypeName",
-                  "src": "166:7:13",
+                  "src": "166:7:8",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bytes32",
                     "typeString": "bytes32"
@@ -131,11 +131,11 @@
               },
               {
                 "constant": false,
-                "id": 1856,
+                "id": 1332,
                 "name": "owner",
                 "nodeType": "VariableDeclaration",
-                "scope": 1861,
-                "src": "187:21:13",
+                "scope": 1337,
+                "src": "187:21:8",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -143,10 +143,10 @@
                   "typeString": "address payable"
                 },
                 "typeName": {
-                  "id": 1855,
+                  "id": 1331,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
-                  "src": "187:15:13",
+                  "src": "187:15:8",
                   "stateMutability": "payable",
                   "typeDescriptions": {
                     "typeIdentifier": "t_address_payable",
@@ -158,11 +158,11 @@
               },
               {
                 "constant": false,
-                "id": 1858,
+                "id": 1334,
                 "name": "nftAddress",
                 "nodeType": "VariableDeclaration",
-                "scope": 1861,
-                "src": "219:18:13",
+                "scope": 1337,
+                "src": "219:18:8",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -170,10 +170,10 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 1857,
+                  "id": 1333,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
-                  "src": "219:7:13",
+                  "src": "219:7:8",
                   "stateMutability": "nonpayable",
                   "typeDescriptions": {
                     "typeIdentifier": "t_address",
@@ -185,11 +185,11 @@
               },
               {
                 "constant": false,
-                "id": 1860,
+                "id": 1336,
                 "name": "price",
                 "nodeType": "VariableDeclaration",
-                "scope": 1861,
-                "src": "248:13:13",
+                "scope": 1337,
+                "src": "248:13:8",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -197,10 +197,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1859,
+                  "id": 1335,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "248:7:13",
+                  "src": "248:7:8",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -212,17 +212,17 @@
             ],
             "name": "Photo",
             "nodeType": "StructDefinition",
-            "scope": 1870,
-            "src": "142:127:13",
+            "scope": 1346,
+            "src": "142:127:8",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 1863,
+            "id": 1339,
             "name": "nftCounter",
             "nodeType": "VariableDeclaration",
-            "scope": 1870,
-            "src": "279:25:13",
+            "scope": 1346,
+            "src": "279:25:8",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -230,10 +230,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 1862,
+              "id": 1338,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "279:7:13",
+              "src": "279:7:8",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -244,62 +244,62 @@
           },
           {
             "constant": false,
-            "id": 1869,
+            "id": 1345,
             "name": "photoByAssetId",
             "nodeType": "VariableDeclaration",
-            "scope": 1870,
-            "src": "383:68:13",
+            "scope": 1346,
+            "src": "383:68:8",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_uint256_$_t_struct$_Photo_$1861_storage_$_$",
+              "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_uint256_$_t_struct$_Photo_$1337_storage_$_$",
               "typeString": "mapping(address => mapping(uint256 => struct PhotographyStorage.Photo))"
             },
             "typeName": {
-              "id": 1868,
+              "id": 1344,
               "keyType": {
-                "id": 1864,
+                "id": 1340,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "392:7:13",
+                "src": "392:7:8",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
               "nodeType": "Mapping",
-              "src": "383:46:13",
+              "src": "383:46:8",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_uint256_$_t_struct$_Photo_$1861_storage_$_$",
+                "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_uint256_$_t_struct$_Photo_$1337_storage_$_$",
                 "typeString": "mapping(address => mapping(uint256 => struct PhotographyStorage.Photo))"
               },
               "valueType": {
-                "id": 1867,
+                "id": 1343,
                 "keyType": {
-                  "id": 1865,
+                  "id": 1341,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "411:7:13",
+                  "src": "411:7:8",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
                   }
                 },
                 "nodeType": "Mapping",
-                "src": "403:25:13",
+                "src": "403:25:8",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Photo_$1861_storage_$",
+                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Photo_$1337_storage_$",
                   "typeString": "mapping(uint256 => struct PhotographyStorage.Photo)"
                 },
                 "valueType": {
                   "contractScope": null,
-                  "id": 1866,
+                  "id": 1342,
                   "name": "Photo",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 1861,
-                  "src": "422:5:13",
+                  "referencedDeclaration": 1337,
+                  "src": "422:5:8",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Photo_$1861_storage_ptr",
+                    "typeIdentifier": "t_struct$_Photo_$1337_storage_ptr",
                     "typeString": "struct PhotographyStorage.Photo"
                   }
                 }
@@ -309,18 +309,18 @@
             "visibility": "public"
           }
         ],
-        "scope": 1871,
-        "src": "99:360:13"
+        "scope": 1347,
+        "src": "99:360:8"
       }
     ],
-    "src": "0:459:13"
+    "src": "0:459:8"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "/C/Users/yashr/Documents/Important/Projects/Footprints/src/contracts/PhotographyStorage.sol",
       "exportedSymbols": {
         "PhotographyStorage": [
-          1870
+          1346
         ]
       }
     },
@@ -334,9 +334,9 @@
             ".16"
           ]
         },
-        "id": 1852,
+        "id": 1328,
         "name": "PragmaDirective",
-        "src": "0:24:13"
+        "src": "0:24:8"
       },
       {
         "attributes": {
@@ -350,17 +350,17 @@
           "documentation": "@title Interface for contracts conforming to ERC-721",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            1870
+            1346
           ],
           "name": "PhotographyStorage",
-          "scope": 1871
+          "scope": 1347
         },
         "children": [
           {
             "attributes": {
               "canonicalName": "PhotographyStorage.Photo",
               "name": "Photo",
-              "scope": 1870,
+              "scope": 1346,
               "visibility": "public"
             },
             "children": [
@@ -368,7 +368,7 @@
                 "attributes": {
                   "constant": false,
                   "name": "id",
-                  "scope": 1861,
+                  "scope": 1337,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "bytes32",
@@ -381,20 +381,20 @@
                       "name": "bytes32",
                       "type": "bytes32"
                     },
-                    "id": 1853,
+                    "id": 1329,
                     "name": "ElementaryTypeName",
-                    "src": "166:7:13"
+                    "src": "166:7:8"
                   }
                 ],
-                "id": 1854,
+                "id": 1330,
                 "name": "VariableDeclaration",
-                "src": "166:10:13"
+                "src": "166:10:8"
               },
               {
                 "attributes": {
                   "constant": false,
                   "name": "owner",
-                  "scope": 1861,
+                  "scope": 1337,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "address payable",
@@ -408,20 +408,20 @@
                       "stateMutability": "payable",
                       "type": "address payable"
                     },
-                    "id": 1855,
+                    "id": 1331,
                     "name": "ElementaryTypeName",
-                    "src": "187:15:13"
+                    "src": "187:15:8"
                   }
                 ],
-                "id": 1856,
+                "id": 1332,
                 "name": "VariableDeclaration",
-                "src": "187:21:13"
+                "src": "187:21:8"
               },
               {
                 "attributes": {
                   "constant": false,
                   "name": "nftAddress",
-                  "scope": 1861,
+                  "scope": 1337,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "address",
@@ -435,20 +435,20 @@
                       "stateMutability": "nonpayable",
                       "type": "address"
                     },
-                    "id": 1857,
+                    "id": 1333,
                     "name": "ElementaryTypeName",
-                    "src": "219:7:13"
+                    "src": "219:7:8"
                   }
                 ],
-                "id": 1858,
+                "id": 1334,
                 "name": "VariableDeclaration",
-                "src": "219:18:13"
+                "src": "219:18:8"
               },
               {
                 "attributes": {
                   "constant": false,
                   "name": "price",
-                  "scope": 1861,
+                  "scope": 1337,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "uint256",
@@ -461,25 +461,25 @@
                       "name": "uint256",
                       "type": "uint256"
                     },
-                    "id": 1859,
+                    "id": 1335,
                     "name": "ElementaryTypeName",
-                    "src": "248:7:13"
+                    "src": "248:7:8"
                   }
                 ],
-                "id": 1860,
+                "id": 1336,
                 "name": "VariableDeclaration",
-                "src": "248:13:13"
+                "src": "248:13:8"
               }
             ],
-            "id": 1861,
+            "id": 1337,
             "name": "StructDefinition",
-            "src": "142:127:13"
+            "src": "142:127:8"
           },
           {
             "attributes": {
               "constant": false,
               "name": "nftCounter",
-              "scope": 1870,
+              "scope": 1346,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256",
@@ -492,20 +492,20 @@
                   "name": "uint256",
                   "type": "uint256"
                 },
-                "id": 1862,
+                "id": 1338,
                 "name": "ElementaryTypeName",
-                "src": "279:7:13"
+                "src": "279:7:8"
               }
             ],
-            "id": 1863,
+            "id": 1339,
             "name": "VariableDeclaration",
-            "src": "279:25:13"
+            "src": "279:25:8"
           },
           {
             "attributes": {
               "constant": false,
               "name": "photoByAssetId",
-              "scope": 1870,
+              "scope": 1346,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(address => mapping(uint256 => struct PhotographyStorage.Photo))",
@@ -523,9 +523,9 @@
                       "name": "address",
                       "type": "address"
                     },
-                    "id": 1864,
+                    "id": 1340,
                     "name": "ElementaryTypeName",
-                    "src": "392:7:13"
+                    "src": "392:7:8"
                   },
                   {
                     "attributes": {
@@ -537,45 +537,45 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 1865,
+                        "id": 1341,
                         "name": "ElementaryTypeName",
-                        "src": "411:7:13"
+                        "src": "411:7:8"
                       },
                       {
                         "attributes": {
                           "contractScope": null,
                           "name": "Photo",
-                          "referencedDeclaration": 1861,
+                          "referencedDeclaration": 1337,
                           "type": "struct PhotographyStorage.Photo"
                         },
-                        "id": 1866,
+                        "id": 1342,
                         "name": "UserDefinedTypeName",
-                        "src": "422:5:13"
+                        "src": "422:5:8"
                       }
                     ],
-                    "id": 1867,
+                    "id": 1343,
                     "name": "Mapping",
-                    "src": "403:25:13"
+                    "src": "403:25:8"
                   }
                 ],
-                "id": 1868,
+                "id": 1344,
                 "name": "Mapping",
-                "src": "383:46:13"
+                "src": "383:46:8"
               }
             ],
-            "id": 1869,
+            "id": 1345,
             "name": "VariableDeclaration",
-            "src": "383:68:13"
+            "src": "383:68:8"
           }
         ],
-        "id": 1870,
+        "id": 1346,
         "name": "ContractDefinition",
-        "src": "99:360:13"
+        "src": "99:360:8"
       }
     ],
-    "id": 1871,
+    "id": 1347,
     "name": "SourceUnit",
-    "src": "0:459:13"
+    "src": "0:459:8"
   },
   "compiler": {
     "name": "solc",
@@ -583,7 +583,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-08-14T19:26:25.445Z",
+  "updatedAt": "2021-08-15T13:27:31.511Z",
   "devdoc": {
     "methods": {},
     "title": "Interface for contracts conforming to ERC-721"
