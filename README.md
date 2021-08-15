@@ -43,12 +43,14 @@ Install the following prerequisites
 ## UI ScreenShots
 <br><h1 align="center">Upload Section</h1></br>
 ![1111](https://user-images.githubusercontent.com/59107121/129489810-958d5fcc-79d3-4c2e-8bc6-df295dc0fc15.png)
-<br><h1 align="center">Feeds Section</h1></br>
+<br><h1 align="center">Memorials</h1></br>
+![image (1)](https://user-images.githubusercontent.com/64516800/129490191-a19e5b22-e13c-4ead-bfb5-ead8e59d3b6f.png)
+<br><h1 align="center">MarketPlace</h1></br>
+![image (2)](https://user-images.githubusercontent.com/64516800/129490251-050af51f-c493-4663-a87f-a7fc344612ee.png)
+<br><h1 align="center">Premium</h1></br>
+![222](https://user-images.githubusercontent.com/64516800/129490212-f98c6193-d5b1-4201-b0f2-6c254fb1f89f.png)
+<br><h1 align="center">Photography</h1></br>
+![image](https://user-images.githubusercontent.com/64516800/129490166-d1d173e3-e441-4318-ba90-aea829d1b808.png)
 
-<br><h1 align="center">MarketPlace Section</h1></br>
-
-<br><h1 align="center">D-Reels Section</h1></br>
-
-<br><h1 align="center">My Profile Section</h1></br>
 
 
